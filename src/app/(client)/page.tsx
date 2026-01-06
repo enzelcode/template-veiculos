@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Hero } from '@/components/home';
+import { Hero, ContactCTA } from '@/components/home';
 import { VehicleCard } from '@/components/vehicles';
 import { Button } from '@/components/ui/button';
 import { getFeaturedVehicles } from '@/lib/mock/vehicles';
@@ -25,6 +25,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <ContactCTA />
     </>
   );
 }

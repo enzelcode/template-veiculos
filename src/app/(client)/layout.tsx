@@ -1,4 +1,5 @@
 import { Header, Footer } from '@/components/layout';
+import { WhatsAppFloat } from '@/components/shared';
 
 export default function ClientLayout({
   children,
@@ -10,6 +11,7 @@ export default function ClientLayout({
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
