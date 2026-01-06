@@ -6,33 +6,38 @@ import { WhatsAppIcon } from './WhatsAppIcon';
 import { SITE_CONFIG } from '@/constants/site';
 
 interface WhatsAppButtonProps {
+  phone?: string;
   message?: string;
-  variant?: 'default' | 'outline' | 'ghost';
   size?: 'default' | 'sm' | 'lg';
   className?: string;
   children?: React.ReactNode;
 }
 
 function WhatsAppButtonComponent({
+  phone,
   message,
-  variant = 'default',
-  size = 'lg',
+  size = 'default',
   className = '',
   children = 'Fale Conosco',
 }: WhatsAppButtonProps) {
-  const baseUrl = `https://wa.me/${SITE_CONFIG.whatsapp}`;
+  const phoneNumber = phone || SITE_CONFIG.whatsapp;
+  const baseUrl = `https://wa.me/${phoneNumber}`;
   const url = message ? `${baseUrl}?text=${encodeURIComponent(message)}` : baseUrl;
 
   return (
     <Button
-      asChild
-      variant={variant}
       size={size}
       className={`bg-[#25D366] hover:bg-[#1da851] text-white ${className}`}
+      asChild
     >
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        <WhatsAppIcon className="h-5 w-5 mr-2" />
-        {children}
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2"
+      >
+        <WhatsAppIcon className="!h-5 !w-5" />
+        <span>{children}</span>
       </a>
     </Button>
   );
