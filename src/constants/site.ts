@@ -5,38 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Template Veículos',
-  slogan: 'Os melhores veículos você encontra aqui',
-  description: 'Loja de veículos novos e seminovos com os melhores preços e condições de pagamento.',
+  name: 'Star Motors SJC',
+  slogan: 'Seu próximo carro começa aqui',
+  description: 'Loja de veículos seminovos em São José dos Campos com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(11) 99999-9999',
-  whatsapp: '5511999999999',
-  email: 'contato@templateveiculos.com.br',
+  phone: '(12) 99743-9795',
+  whatsapp: '5512988435747',
+  whatsapp2: '5512997439795',
+  email: 'contato@starmotorssjc.com.br',
 
   // Endereço
   address: {
-    street: 'Rua Exemplo',
-    number: '123',
-    neighborhood: 'Centro',
-    city: 'São Paulo',
+    street: 'Av. Andrômeda',
+    number: '3740',
+    neighborhood: 'Bosque dos Eucaliptos',
+    city: 'São José dos Campos',
     state: 'SP',
-    zipCode: '01234-567',
-    full: 'Rua Exemplo, 123 - Centro, São Paulo/SP',
+    zipCode: '12233-001',
+    full: 'Av. Andrômeda, 3740 - Bosque dos Eucaliptos, São José dos Campos/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '08:00 às 18:00',
-    saturday: '08:00 às 13:00',
+    weekdays: '08:00 às 18:30',
+    saturday: '08:00 às 14:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 08h-18h | Sáb: 08h-13h',
+    formatted: 'Seg-Sex: 08h-18h30 | Sáb: 08h-14h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/templateveiculos',
-    facebook: 'https://facebook.com/templateveiculos',
+    instagram: 'https://instagram.com/starmotors.sjc',
+    facebook: '',
     youtube: '',
     tiktok: '',
   },
