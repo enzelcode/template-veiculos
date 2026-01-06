@@ -3,8 +3,26 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
+import { Loader2 } from 'lucide-react';
 import { VehicleCard, VehicleFilters, FilterState } from '@/components/vehicles';
-import { MOCK_VEHICLES } from '@/lib/mock/vehicles';
+
+interface Vehicle {
+  _id: string;
+  brand: string;
+  model: string;
+  version: string;
+  year: number;
+  yearModel: number;
+  price: number;
+  mileage: number;
+  fuel: string;
+  transmission: string;
+  color: string;
+  featuredImage: string;
+  images: string[];
+  slug: string;
+  status: string;
+}
 
 const initialFilters: FilterState = {
   search: '',
@@ -19,6 +37,24 @@ const initialFilters: FilterState = {
 export default function VehiclesPage() {
   const searchParams = useSearchParams();
   const [filters, setFilters] = useState<FilterState>(initialFilters);
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Buscar veículos da API
+  useEffect(() => {
+    async function fetchVehicles() {
+      try {
+        const response = await fetch('/api/vehicles?status=available');
+        const data = await response.json();
+        setVehicles(data.vehicles || []);
+      } catch (error) {
+        console.error('Erro ao buscar veículos:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchVehicles();
+  }, []);
 
   useEffect(() => {
     const searchFromUrl = searchParams.get('search');
@@ -35,8 +71,29 @@ export default function VehiclesPage() {
     setFilters(initialFilters);
   }, []);
 
+  // Transformar dados da API para formato do VehicleCard
+  const transformedVehicles = useMemo(() => {
+    return vehicles.map((v) => ({
+      _id: v._id,
+      title: `${v.brand} ${v.model}`,
+      brand: v.brand,
+      model: v.model,
+      version: v.version,
+      year: v.year,
+      yearModel: v.yearModel,
+      price: v.price,
+      mileage: v.mileage,
+      fuel: v.fuel,
+      transmission: v.transmission,
+      color: v.color,
+      featuredImage: v.featuredImage,
+      images: v.images,
+      slug: v.slug,
+    }));
+  }, [vehicles]);
+
   const filteredVehicles = useMemo(() => {
-    let result = [...MOCK_VEHICLES];
+    let result = [...transformedVehicles];
 
     if (filters.search) {
       const search = filters.search.toLowerCase();
@@ -96,7 +153,7 @@ export default function VehiclesPage() {
     }
 
     return result;
-  }, [filters]);
+  }, [filters, transformedVehicles]);
 
   return (
     <div>
@@ -119,14 +176,18 @@ export default function VehiclesPage() {
 
       <div className="container-custom py-12">
         <VehicleFilters
-        filters={filters}
-        onFilterChange={handleFilterChange}
-        onClearFilters={handleClearFilters}
-        totalResults={filteredVehicles.length}
-      />
+          filters={filters}
+          onFilterChange={handleFilterChange}
+          onClearFilters={handleClearFilters}
+          totalResults={filteredVehicles.length}
+        />
 
         <div className="mt-8">
-          {filteredVehicles.length > 0 ? (
+          {loading ? (
+            <div className="flex items-center justify-center py-12">
+              <Loader2 className="h-8 w-8 animate-spin text-primary" />
+            </div>
+          ) : filteredVehicles.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredVehicles.map((vehicle) => (
                 <VehicleCard key={vehicle._id} vehicle={vehicle} />
@@ -135,7 +196,7 @@ export default function VehiclesPage() {
           ) : (
             <div className="text-center py-12">
               <p className="text-muted-foreground text-lg">
-                Nenhum veículo encontrado com os filtros selecionados.
+                Nenhum veículo encontrado.
               </p>
             </div>
           )}

@@ -1,5 +1,6 @@
 import { Header, Footer } from '@/components/layout';
 import { WhatsAppFloat } from '@/components/shared';
+import { PageTracker } from '@/components/analytics/PageTracker';
 
 export default function ClientLayout({
   children,
@@ -12,6 +13,7 @@ export default function ClientLayout({
       <main className="flex-1">{children}</main>
       <Footer />
       <WhatsAppFloat />
+      <PageTracker />
     </div>
   );
 }
