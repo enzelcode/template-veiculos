@@ -51,7 +51,6 @@ export const SITE_CONFIG = {
     ],
     footer: [
       { label: 'Política de Privacidade', href: '/privacidade' },
-      { label: 'Termos de Uso', href: '/termos' },
     ],
   },
 } as const;
