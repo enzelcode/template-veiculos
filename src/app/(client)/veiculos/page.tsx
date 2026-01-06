@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 import { VehicleCard, VehicleFilters, FilterState } from '@/components/vehicles';
 import { MOCK_VEHICLES } from '@/lib/mock/vehicles';
 
@@ -98,35 +99,47 @@ export default function VehiclesPage() {
   }, [filters]);
 
   return (
-    <div className="container-custom py-12">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">Nossos Veículos</h1>
-        <p className="text-muted-foreground">
-          Encontre o veículo ideal para você
-        </p>
-      </div>
+    <div>
+      <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200"
+            alt=""
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container-custom relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nossos Veículos</h1>
+          <p className="text-zinc-300 text-lg max-w-2xl">
+            Encontre o veículo ideal para você
+          </p>
+        </div>
+      </section>
 
-      <VehicleFilters
+      <div className="container-custom py-12">
+        <VehicleFilters
         filters={filters}
         onFilterChange={handleFilterChange}
         onClearFilters={handleClearFilters}
         totalResults={filteredVehicles.length}
       />
 
-      <div className="mt-8">
-        {filteredVehicles.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredVehicles.map((vehicle) => (
-              <VehicleCard key={vehicle._id} vehicle={vehicle} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">
-              Nenhum veículo encontrado com os filtros selecionados.
-            </p>
-          </div>
-        )}
+        <div className="mt-8">
+          {filteredVehicles.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredVehicles.map((vehicle) => (
+                <VehicleCard key={vehicle._id} vehicle={vehicle} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground text-lg">
+                Nenhum veículo encontrado com os filtros selecionados.
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
