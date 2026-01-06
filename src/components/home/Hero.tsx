@@ -11,8 +11,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Encontre o veículo dos seus sonhos`,
-  subtitle = SITE_CONFIG.slogan,
+  title = `Busque o carro que você quer`,
+  subtitle = `Explore nosso estoque e encontre o modelo ideal pra você.`,
   backgroundImage,
 }: HeroProps) {
   return (
@@ -22,21 +22,21 @@ function HeroComponent({
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-zinc-800" />
       )}
 
-      <div className="container-custom relative z-10">
-        <div className="max-w-2xl">
+      <div className="container-custom relative z-10 flex justify-center">
+        <div className="max-w-2xl text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             {title}
           </h1>
           <p className="text-lg md:text-xl text-zinc-300 mb-8">
             {subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-base">
               <Link href="/veiculos">Ver Estoque</Link>
             </Button>

@@ -2,6 +2,7 @@
 
 import { memo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { SITE_CONFIG } from '@/constants/site';
 import { SearchBar } from '@/components/shared/SearchBar';
 import { MobileMenu } from './MobileMenu';
@@ -10,12 +11,19 @@ function HeaderComponent() {
   return (
     <header className="sticky top-0 z-50 w-full bg-zinc-900 border-b border-zinc-800">
       <div className="container-custom">
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex h-28 items-center justify-between gap-4">
           <Link
             href="/"
-            className="flex-shrink-0 text-xl font-bold text-white hover:text-zinc-200 transition-colors"
+            className="flex-shrink-0"
           >
-            {SITE_CONFIG.name}
+            <Image
+              src="/logostarmotors.webp"
+              alt="Star Motors SJC"
+              width={150}
+              height={80}
+              className="h-26 w-auto object-contain"
+              priority
+            />
           </Link>
 
           <div className="hidden md:block flex-1 max-w-md mx-4">

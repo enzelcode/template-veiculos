@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 import { SITE_CONFIG } from '@/constants/site';
 import { WhatsAppIcon } from '@/components/shared';
@@ -12,8 +13,14 @@ function FooterComponent() {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">{SITE_CONFIG.name}</h3>
-            <p className="text-sm text-zinc-400 mb-4">{SITE_CONFIG.slogan}</p>
+            <Image
+              src="/logostarmotors.webp"
+              alt="Star Motors SJC"
+              width={150}
+              height={80}
+              className="h-26 w-auto object-contain mb-4"
+            />
+            <p className="text-sm text-zinc-400 mb-4">Seminovos selecionados em São José dos Campos.</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a
