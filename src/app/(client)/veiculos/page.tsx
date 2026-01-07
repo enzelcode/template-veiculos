@@ -160,7 +160,7 @@ export default function VehiclesPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200"
+            src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=1200"
             alt=""
             fill
             className="object-cover"

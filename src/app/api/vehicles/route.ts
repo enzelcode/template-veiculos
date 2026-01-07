@@ -1,43 +1,85 @@
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/lib/db/mongodb';
 import { Vehicle } from '@/lib/db/models';
+import { MOCK_VEHICLES_FULL } from '@/lib/mock/vehicles';
+
+// Flag para usar dados mockados (mudar para false quando conectar ao banco real)
+const USE_MOCK_DATA = true;
 
 // GET /api/vehicles - Listar veículos com filtros e paginação
 export async function GET(request: NextRequest) {
   try {
-    await connectDB();
-
     const { searchParams } = new URL(request.url);
 
     // Paginação
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '12');
-    const skip = (page - 1) * limit;
 
-    // Ordenação
+    // Filtros
+    const brand = searchParams.get('brand');
+    const fuel = searchParams.get('fuel');
+    const transmission = searchParams.get('transmission');
+    const status = searchParams.get('status');
+    const featured = searchParams.get('featured');
+    const minPrice = searchParams.get('minPrice');
+    const maxPrice = searchParams.get('maxPrice');
+    const search = searchParams.get('search');
+
+    // Usar dados mockados
+    if (USE_MOCK_DATA) {
+      let vehicles = [...MOCK_VEHICLES_FULL];
+
+      // Aplicar filtros
+      if (brand) vehicles = vehicles.filter((v) => v.brand === brand);
+      if (fuel) vehicles = vehicles.filter((v) => v.fuel === fuel);
+      if (transmission) vehicles = vehicles.filter((v) => v.transmission === transmission);
+      if (status) vehicles = vehicles.filter((v) => v.status === status);
+      if (featured === 'true') vehicles = vehicles.filter((v) => v.featured);
+      if (minPrice) vehicles = vehicles.filter((v) => v.price >= parseInt(minPrice));
+      if (maxPrice) vehicles = vehicles.filter((v) => v.price <= parseInt(maxPrice));
+      if (search) {
+        const searchLower = search.toLowerCase();
+        vehicles = vehicles.filter(
+          (v) =>
+            v.title.toLowerCase().includes(searchLower) ||
+            v.brand.toLowerCase().includes(searchLower) ||
+            v.model.toLowerCase().includes(searchLower)
+        );
+      }
+
+      const total = vehicles.length;
+      const skip = (page - 1) * limit;
+      const paginatedVehicles = vehicles.slice(skip, skip + limit);
+      const totalPages = Math.ceil(total / limit);
+
+      return NextResponse.json({
+        vehicles: paginatedVehicles,
+        pagination: {
+          total,
+          page,
+          limit,
+          totalPages,
+          hasNext: page < totalPages,
+          hasPrev: page > 1,
+        },
+      });
+    }
+
+    // Usar banco de dados real
+    await connectDB();
+
+    const skip = (page - 1) * limit;
     const sortField = searchParams.get('sort') || 'createdAt';
     const sortOrder = searchParams.get('order') === 'asc' ? 1 : -1;
 
-    // Filtros
     const query: Record<string, unknown> = {};
 
-    const brand = searchParams.get('brand');
     if (brand) query.brand = brand;
-
-    const fuel = searchParams.get('fuel');
     if (fuel) query.fuel = fuel;
-
-    const transmission = searchParams.get('transmission');
     if (transmission) query.transmission = transmission;
-
-    const status = searchParams.get('status');
     if (status) query.status = status;
-
-    const featured = searchParams.get('featured');
     if (featured === 'true') query.featured = true;
 
-    const minPrice = searchParams.get('minPrice');
-    const maxPrice = searchParams.get('maxPrice');
     if (minPrice || maxPrice) {
       query.price = {};
       if (minPrice) (query.price as Record<string, number>).$gte = parseInt(minPrice);
@@ -52,7 +94,6 @@ export async function GET(request: NextRequest) {
       if (maxYear) (query.year as Record<string, number>).$lte = parseInt(maxYear);
     }
 
-    const search = searchParams.get('search');
     if (search) {
       query.$or = [
         { title: { $regex: search, $options: 'i' } },
@@ -61,13 +102,12 @@ export async function GET(request: NextRequest) {
       ];
     }
 
-    // Buscar veículos
     const [vehicles, total] = await Promise.all([
       Vehicle.find(query)
         .sort({ [sortField]: sortOrder })
         .skip(skip)
         .limit(limit)
-        .select('-description -features') // Não retorna campos pesados na listagem
+        .select('-description -features')
         .lean(),
       Vehicle.countDocuments(query),
     ]);

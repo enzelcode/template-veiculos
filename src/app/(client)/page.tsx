@@ -5,12 +5,22 @@ import { AnimateOnScroll } from '@/components/shared';
 import { Button } from '@/components/ui/button';
 import { connectDB } from '@/lib/db/mongodb';
 import Vehicle from '@/lib/db/models/Vehicle';
+import { getFeaturedVehicles as getMockFeaturedVehicles } from '@/lib/mock/vehicles';
+
+// Flag para usar dados mockados (mudar para false quando conectar ao banco real)
+const USE_MOCK_DATA = true;
 
 async function getFeaturedVehicles() {
+  // Usar dados mockados
+  if (USE_MOCK_DATA) {
+    return getMockFeaturedVehicles();
+  }
+
+  // Usar banco de dados real
   await connectDB();
   const vehicles = await Vehicle.find({
     status: 'available',
-    featured: true
+    featured: true,
   })
     .sort({ createdAt: -1 })
     .limit(6)

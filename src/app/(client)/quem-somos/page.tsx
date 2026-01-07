@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import { CheckCircle, Users, Award, ThumbsUp, Shield } from 'lucide-react';
+import { CheckCircle, Users, Car, ThumbsUp, Shield } from 'lucide-react';
 import { ContactCTA } from '@/components/home';
 import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
-const stats = [
-  { icon: Users, value: '5.000+', label: 'Clientes satisfeitos' },
-  { icon: Award, value: '15+', label: 'Anos no mercado' },
-  { icon: ThumbsUp, value: '98%', label: 'Aprovação' },
-  { icon: Shield, value: '100%', label: 'Procedência garantida' },
+const diferenciais = [
+  { icon: Users, label: 'Atendimento personalizado' },
+  { icon: Car, label: 'Veículos selecionados' },
+  { icon: ThumbsUp, label: 'Satisfação garantida' },
+  { icon: Shield, label: 'Procedência verificada' },
 ];
 
 const values = [
@@ -26,7 +26,7 @@ export default function QuemSomosPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200"
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200"
             alt=""
             fill
             className="object-cover"
@@ -47,15 +47,11 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800"
+                    src="/sobre.webp"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
                   />
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl hidden md:block">
-                  <p className="text-4xl font-bold">15+</p>
-                  <p className="text-sm">Anos de mercado</p>
                 </div>
               </div>
             </AnimateOnScroll>
@@ -71,9 +67,8 @@ export default function QuemSomosPage() {
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    do sonho de oferecer veículos de qualidade com atendimento diferenciado.
-                    Há mais de 15 anos no mercado, construímos uma reputação sólida baseada
-                    na confiança e transparência.
+                    do compromisso de oferecer veículos de qualidade com atendimento diferenciado.
+                    Construímos nossa reputação baseada na confiança e transparência com cada cliente.
                   </p>
                   <p>
                     Nossa equipe é formada por profissionais experientes e apaixonados pelo
@@ -94,14 +89,13 @@ export default function QuemSomosPage() {
       <section className="py-16 bg-zinc-900 text-white">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map(({ icon: Icon, value, label }, index) => (
+            {diferenciais.map(({ icon: Icon, label }, index) => (
               <AnimateOnScroll key={label} animation="fadeUp" delay={index * 100}>
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/20 mb-4">
                     <Icon className="h-7 w-7 text-primary" />
                   </div>
-                  <p className="text-3xl md:text-4xl font-bold">{value}</p>
-                  <p className="text-zinc-400 text-sm mt-1">{label}</p>
+                  <p className="text-zinc-100 font-medium">{label}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -138,8 +132,8 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800"
-                  alt="Veículo em destaque"
+                  src="/pq.webp"
+                  alt="Por que nos escolher"
                   fill
                   className="object-cover"
                 />
