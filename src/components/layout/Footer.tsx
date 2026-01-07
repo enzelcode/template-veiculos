@@ -112,7 +112,7 @@ function FooterComponent() {
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">
-                <MapPin className="h-4 w-4 text-zinc-500 mt-0.5" />
+                <MapPin className="h-5 w-5 text-zinc-500 flex-shrink-0 mt-0.5" />
                 <span>{SITE_CONFIG.address.full}</span>
               </li>
             </ul>
