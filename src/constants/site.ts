@@ -1,6 +1,6 @@
 /**
  * Configurações do site - CUSTOMIZAR POR CLIENTE
- * Este arquivo contém todas as informações que mudam entre clientes
+ * Este arquivo contém todas as informações que variam entre clientes
  */
 
 export const SITE_CONFIG = {
