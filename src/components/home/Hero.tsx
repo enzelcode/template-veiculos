@@ -2,7 +2,6 @@ import { memo } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { WhatsAppButton } from '@/components/shared';
-import { SITE_CONFIG } from '@/constants/site';
 
 interface HeroProps {
   title?: string;

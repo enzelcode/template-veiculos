@@ -1,28 +1,11 @@
 'use client';
 
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { Loader2 } from 'lucide-react';
 import { VehicleCard, VehicleFilters, FilterState } from '@/components/vehicles';
-
-interface Vehicle {
-  _id: string;
-  brand: string;
-  model: string;
-  version: string;
-  year: number;
-  yearModel: number;
-  price: number;
-  mileage: number;
-  fuel: string;
-  transmission: string;
-  color: string;
-  featuredImage: string;
-  images: string[];
-  slug: string;
-  status: string;
-}
+import type { VehicleCard as VehicleCardType } from '@/types/vehicle';
 
 const initialFilters: FilterState = {
   search: '',
@@ -34,10 +17,10 @@ const initialFilters: FilterState = {
   sort: 'createdAt_desc',
 };
 
-export default function VehiclesPage() {
+function VehiclesContent() {
   const searchParams = useSearchParams();
   const [filters, setFilters] = useState<FilterState>(initialFilters);
-  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
+  const [vehicles, setVehicles] = useState<VehicleCardType[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Buscar veículos da API
@@ -71,29 +54,8 @@ export default function VehiclesPage() {
     setFilters(initialFilters);
   }, []);
 
-  // Transformar dados da API para formato do VehicleCard
-  const transformedVehicles = useMemo(() => {
-    return vehicles.map((v) => ({
-      _id: v._id,
-      title: `${v.brand} ${v.model}`,
-      brand: v.brand,
-      model: v.model,
-      version: v.version,
-      year: v.year,
-      yearModel: v.yearModel,
-      price: v.price,
-      mileage: v.mileage,
-      fuel: v.fuel,
-      transmission: v.transmission,
-      color: v.color,
-      featuredImage: v.featuredImage,
-      images: v.images,
-      slug: v.slug,
-    }));
-  }, [vehicles]);
-
   const filteredVehicles = useMemo(() => {
-    let result = [...transformedVehicles];
+    let result = [...vehicles];
 
     if (filters.search) {
       const search = filters.search.toLowerCase();
@@ -153,7 +115,7 @@ export default function VehiclesPage() {
     }
 
     return result;
-  }, [filters, transformedVehicles]);
+  }, [filters, vehicles]);
 
   return (
     <div>
@@ -203,5 +165,29 @@ export default function VehiclesPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function VehiclesPage() {
+  return (
+    <Suspense fallback={
+      <div>
+        <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
+          <div className="container-custom relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Nossos Veículos</h1>
+            <p className="text-zinc-300 text-lg max-w-2xl">
+              Encontre o veículo ideal para você
+            </p>
+          </div>
+        </section>
+        <div className="container-custom py-12">
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="h-8 w-8 animate-spin text-primary" />
+          </div>
+        </div>
+      </div>
+    }>
+      <VehiclesContent />
+    </Suspense>
   );
 }

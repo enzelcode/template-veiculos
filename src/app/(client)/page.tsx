@@ -49,6 +49,8 @@ async function getFeaturedVehicles() {
       featuredImage: v.featuredImage,
       images: v.images,
       slug: v.slug,
+      status: v.status,
+      featured: v.featured,
     }));
   }
 
@@ -68,6 +70,8 @@ async function getFeaturedVehicles() {
     featuredImage: v.featuredImage,
     images: v.images,
     slug: v.slug,
+    status: v.status,
+    featured: v.featured,
   }));
 }
 

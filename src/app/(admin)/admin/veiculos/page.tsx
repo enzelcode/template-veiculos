@@ -23,7 +23,7 @@ async function getVehicles() {
 
   const vehicles = await Vehicle.find({})
     .sort({ createdAt: -1 })
-    .select('title brand model year price status featured featuredImage slug views')
+    .select('title brand model year price status featured featuredImage slug')
     .lean();
 
   return vehicles.map((v) => ({
@@ -70,14 +70,13 @@ export default async function VeiculosAdminPage() {
                 <TableHead>Veículo</TableHead>
                 <TableHead>Preço</TableHead>
                 <TableHead>Status</TableHead>
-                <TableHead>Views</TableHead>
                 <TableHead className="w-24">Ações</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {vehicles.length === 0 ? (
                 <TableRow>
-                  <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
+                  <TableCell colSpan={5} className="text-center py-8 text-muted-foreground">
                     Nenhum veículo cadastrado
                   </TableCell>
                 </TableRow>
@@ -121,9 +120,6 @@ export default async function VeiculosAdminPage() {
                             Destaque
                           </Badge>
                         )}
-                      </TableCell>
-                      <TableCell className="text-muted-foreground">
-                        {vehicle.views}
                       </TableCell>
                       <TableCell>
                         <VehicleActions vehicleId={vehicle._id} slug={vehicle.slug} />
