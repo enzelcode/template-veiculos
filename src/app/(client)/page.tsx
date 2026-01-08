@@ -3,66 +3,12 @@ import { Hero, ContactCTA } from '@/components/home';
 import { VehicleCard } from '@/components/vehicles';
 import { AnimateOnScroll } from '@/components/shared';
 import { Button } from '@/components/ui/button';
-import { connectDB } from '@/lib/db/mongodb';
-import Vehicle from '@/lib/db/models/Vehicle';
+import { getFeaturedVehicles as getMockFeaturedVehicles } from '@/lib/mock/vehicles';
 
 async function getFeaturedVehicles() {
-  await connectDB();
-  const vehicles = await Vehicle.find({
-    status: 'available',
-    featured: true
-  })
-    .sort({ createdAt: -1 })
-    .limit(6)
-    .lean();
-
-  // Se não houver veículos em destaque, pega os mais recentes
-  if (vehicles.length === 0) {
-    const recentVehicles = await Vehicle.find({ status: 'available' })
-      .sort({ createdAt: -1 })
-      .limit(6)
-      .lean();
-
-    return recentVehicles.map((v) => ({
-      _id: v._id.toString(),
-      title: `${v.brand} ${v.model}`,
-      brand: v.brand,
-      model: v.model,
-      version: v.version,
-      year: v.year,
-      yearModel: v.yearModel,
-      price: v.price,
-      mileage: v.mileage,
-      fuel: v.fuel,
-      transmission: v.transmission,
-      color: v.color,
-      featuredImage: v.featuredImage,
-      images: v.images,
-      slug: v.slug,
-      status: v.status,
-      featured: v.featured,
-    }));
-  }
-
-  return vehicles.map((v) => ({
-    _id: v._id.toString(),
-    title: `${v.brand} ${v.model}`,
-    brand: v.brand,
-    model: v.model,
-    version: v.version,
-    year: v.year,
-    yearModel: v.yearModel,
-    price: v.price,
-    mileage: v.mileage,
-    fuel: v.fuel,
-    transmission: v.transmission,
-    color: v.color,
-    featuredImage: v.featuredImage,
-    images: v.images,
-    slug: v.slug,
-    status: v.status,
-    featured: v.featured,
-  }));
+  // Durante o build/SSG, usa dados mockados
+  // Em runtime com MongoDB configurado, pode conectar ao banco
+  return getMockFeaturedVehicles();
 }
 
 export default async function HomePage() {
