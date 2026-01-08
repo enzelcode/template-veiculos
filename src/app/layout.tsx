@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: DEFAULT_SEO.titleTemplate,
   },
   description: DEFAULT_SEO.description,
-  keywords: DEFAULT_SEO.keywords,
+  keywords: [...DEFAULT_SEO.keywords],
   openGraph: {
     type: 'website',
     locale: 'pt_BR',

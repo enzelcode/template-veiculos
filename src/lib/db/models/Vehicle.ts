@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document, Model } from 'mongoose';
+import mongoose, { Schema, Model } from 'mongoose';
 import type {
   FuelType,
   TransmissionType,
@@ -6,7 +6,7 @@ import type {
   VehicleStatus,
 } from '@/constants/vehicles';
 
-export interface IVehicle extends Document {
+export interface IVehicle {
   _id: mongoose.Types.ObjectId;
   slug: string;
   title: string;
