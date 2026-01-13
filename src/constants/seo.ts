@@ -11,6 +11,7 @@ export const DEFAULT_SEO = {
   keywords: [
     'veículos',
     'carros',
+    'motors',
     'seminovos',
     'usados',
     'comprar carro',
