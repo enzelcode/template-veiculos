@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Star Motors SJC',
+  name: 'Senna Valle Veículos',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em São José dos Campos com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 99743-9795',
-  whatsapp: '5512988435747',
-  whatsapp2: '5512997439795',
-  email: 'contato@starmotorssjc.com.br',
+  phone: '(12) 3936-3000',
+  whatsapp: '551239363000',
+  whatsapp2: '',
+  email: 'sennaveiculossjc@gmail.com',
 
   // Endereço
   address: {
-    street: 'Av. Andrômeda',
-    number: '3740',
-    neighborhood: 'Bosque dos Eucaliptos',
+    street: 'Av. Cidade Jardim',
+    number: '4400',
+    neighborhood: 'Jardim Portugal',
     city: 'São José dos Campos',
     state: 'SP',
-    zipCode: '12233-001',
-    full: 'Av. Andrômeda, 3740 - Bosque dos Eucaliptos, São José dos Campos/SP',
+    zipCode: '12232-000',
+    full: 'Av. Cidade Jardim, 4400 - Jardim Portugal, São José dos Campos/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '08:00 às 18:30',
-    saturday: '08:00 às 14:00',
+    weekdays: '09:00 às 18:30',
+    saturday: '09:00 às 14:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 08h-18h30 | Sáb: 08h-14h',
+    formatted: 'Seg-Sex: 09h-18h30 | Sáb: 09h-14h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/starmotors.sjc',
-    facebook: '',
+    instagram: 'https://instagram.com/sennavalleveiculos',
+    facebook: 'https://facebook.com/sennavalleveiculos',
     youtube: '',
     tiktok: '',
   },

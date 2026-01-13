@@ -5,18 +5,18 @@ import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const diferenciais = [
-  { icon: Users, label: 'Atendimento personalizado' },
+  { icon: Users, label: 'Atendimento sem enrolação' },
   { icon: Car, label: 'Veículos selecionados' },
-  { icon: ThumbsUp, label: 'Satisfação garantida' },
+  { icon: ThumbsUp, label: 'Menos burocracia' },
   { icon: Shield, label: 'Procedência verificada' },
 ];
 
 const values = [
-  'Transparência em todas as negociações',
+  'Menos burocracia, mais agilidade',
   'Veículos revisados e com procedência',
-  'Atendimento personalizado',
+  'Atendimento direto e transparente',
   'Facilidade no financiamento',
-  'Pós-venda de qualidade',
+  'Qualidade acima de tudo',
   'Preços justos e competitivos',
 ];
 
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/sobre.webp"
+                    src="/sobre1.png"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -62,22 +62,22 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Tradição e confiança no mercado automotivo
+                  Menos burocracia, mais qualidade
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    do compromisso de oferecer veículos de qualidade com atendimento diferenciado.
-                    Construímos nossa reputação baseada na confiança e transparência com cada cliente.
+                    com uma proposta simples: facilitar a compra do seu próximo carro.
+                    Aqui você não perde tempo com burocracia desnecessária.
                   </p>
                   <p>
-                    Nossa equipe é formada por profissionais experientes e apaixonados pelo
-                    mundo automotivo, prontos para ajudar você a encontrar o veículo ideal
-                    para suas necessidades.
+                    Nossa equipe é formada por profissionais experientes que vão direto ao ponto.
+                    Sem enrolação, sem promessas vazias. Só veículos de qualidade e atendimento
+                    que respeita o seu tempo.
                   </p>
                   <p>
-                    Trabalhamos com as melhores marcas do mercado e todos os nossos veículos
-                    passam por rigorosa inspeção antes de serem disponibilizados para venda.
+                    Todos os nossos veículos passam por rigorosa inspeção antes de serem
+                    disponibilizados. Qualidade e procedência garantidas.
                   </p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/pq.webp"
+                  src="/sobre2.png"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"

@@ -14,8 +14,8 @@ function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/logostarmotors.webp"
-              alt="Star Motors SJC"
+              src="/logo.png"
+              alt="Senna Valle Veículos"
               width={150}
               height={80}
               className="h-26 w-auto object-contain mb-4"

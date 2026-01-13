@@ -8,17 +8,17 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca */
-    --primary: 220 90% 56%;
+    /* Cor principal da marca - Vermelho #e9290b */
+    --primary: 7 92% 48%;
     --primary-foreground: 0 0% 100%;
 
-    /* Cor secundária (CTAs, destaques) */
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
+    /* Cor secundária (CTAs, destaques) - Amarelo #fdaf05 */
+    --secondary: 42 98% 51%;
+    --secondary-foreground: 0 0% 0%;
 
     /* Cor de destaque/accent */
-    --accent: 220 90% 96%;
-    --accent-foreground: 220 90% 30%;
+    --accent: 7 92% 96%;
+    --accent-foreground: 7 92% 30%;
 
     /* ========================================
        CORES BASE (geralmente não mudam)
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 220 90% 56%;
+    --ring: 7 92% 48%;
 
     /* Estados */
     --destructive: 0 84% 60%;
@@ -59,22 +59,22 @@
     --radius: 0.5rem;
 
     /* Charts (admin dashboard) */
-    --chart-1: 220 90% 56%;
-    --chart-2: 142 76% 36%;
+    --chart-1: 7 92% 48%;
+    --chart-2: 42 98% 51%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
 
   .dark {
-    --primary: 220 90% 60%;
+    --primary: 7 92% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 76% 45%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 42 98% 55%;
+    --secondary-foreground: 0 0% 0%;
 
-    --accent: 220 50% 20%;
-    --accent-foreground: 220 90% 90%;
+    --accent: 7 50% 20%;
+    --accent-foreground: 7 92% 90%;
 
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
@@ -90,7 +90,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 220 90% 60%;
+    --ring: 7 92% 55%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -101,8 +101,8 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --chart-1: 220 90% 60%;
-    --chart-2: 142 76% 45%;
+    --chart-1: 7 92% 55%;
+    --chart-2: 42 98% 55%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;

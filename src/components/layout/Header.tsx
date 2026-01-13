@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/logostarmotors.webp"
-              alt="Star Motors SJC"
+              src="/logo.png"
+              alt="Senna Valle Veículos"
               width={150}
               height={80}
               className="h-26 w-auto object-contain"

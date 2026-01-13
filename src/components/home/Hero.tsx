@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Busque o carro que você quer`,
-  subtitle = `Explore nosso estoque e encontre o modelo ideal pra você.`,
+  title = `Encontre seu próximo carro sem complicação`,
+  subtitle = `Atendimento direto, transparente e com qualidade. Menos burocracia, mais agilidade.`,
   backgroundImage,
 }: HeroProps) {
   return (
