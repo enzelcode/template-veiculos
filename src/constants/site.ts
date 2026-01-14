@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Senna Valle Veículos',
+  name: 'Vale Veículos',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 3936-3000',
-  whatsapp: '551239363000',
+  phone: '(12) 97407-4292',
+  whatsapp: '5512974074292',
   whatsapp2: '',
-  email: 'sennaveiculossjc@gmail.com',
+  email: '',
 
   // Endereço
   address: {
-    street: 'Av. Cidade Jardim',
-    number: '4400',
-    neighborhood: 'Jardim Portugal',
-    city: 'São José dos Campos',
+    street: 'Av. Maria Augusta Fagundes Gomes',
+    number: '339',
+    neighborhood: 'Res. São Paulo',
+    city: 'Jacareí',
     state: 'SP',
-    zipCode: '12232-000',
-    full: 'Av. Cidade Jardim, 4400 - Jardim Portugal, São José dos Campos/SP',
+    zipCode: '12322-120',
+    full: 'Av. Maria Augusta Fagundes Gomes, 339 - Res. São Paulo, Jacareí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 18:30',
-    saturday: '09:00 às 14:00',
+    weekdays: '08:00 às 18:00',
+    saturday: '08:00 às 13:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-18h30 | Sáb: 09h-14h',
+    formatted: 'Seg-Sex: 08h-18h | Sáb: 08h-13h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/sennavalleveiculos',
-    facebook: 'https://facebook.com/sennavalleveiculos',
+    instagram: '',
+    facebook: '',
     youtube: '',
     tiktok: '',
   },

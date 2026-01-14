@@ -26,7 +26,7 @@ export default function QuemSomosPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200"
+            src="https://lh3.googleusercontent.com/p/AF1QipNPOzlf7hKHi9a4qy76ogXanWFdkPTczl53kQtL=s1360-w1360-h1020-rw"
             alt=""
             fill
             className="object-cover"
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/sobre1.png"
+                    src="/sobrevv1.webp"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -132,7 +132,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/sobre2.png"
+                  src="/sobrevv2.webp"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"

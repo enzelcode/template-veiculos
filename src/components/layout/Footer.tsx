@@ -14,13 +14,13 @@ function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/logo.png"
-              alt="Senna Valle Veículos"
+              src="/vv.png"
+              alt="Vale Veículos"
               width={150}
               height={80}
               className="h-26 w-auto object-contain mb-4"
             />
-            <p className="text-sm text-zinc-400 mb-4">Seminovos selecionados em São José dos Campos.</p>
+            <p className="text-sm text-zinc-400 mb-4">Seminovos selecionados em Jacareí.</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a
@@ -105,12 +105,14 @@ function FooterComponent() {
                   {SITE_CONFIG.phone}
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm">
-                <Mail className="h-4 w-4 text-zinc-500" />
-                <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-white transition-colors">
-                  {SITE_CONFIG.email}
-                </a>
-              </li>
+              {SITE_CONFIG.email && (
+                <li className="flex items-center gap-2 text-sm">
+                  <Mail className="h-4 w-4 text-zinc-500" />
+                  <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-white transition-colors">
+                    {SITE_CONFIG.email}
+                  </a>
+                </li>
+              )}
               <li className="flex items-start gap-2 text-sm">
                 <MapPin className="h-5 w-5 text-zinc-500 flex-shrink-0 mt-0.5" />
                 <span>{SITE_CONFIG.address.full}</span>
