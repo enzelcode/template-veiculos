@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Vale Veículos',
+  name: 'Max Veículos',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos e intermediações em Jacareí. Atendemos São José dos Campos e região.',
 
   // Contato
-  phone: '(12) 97407-4292',
-  whatsapp: '5512974074292',
-  whatsapp2: '',
-  email: '',
+  phone: '(12) 98295-5001',
+  whatsapp: '5512982955001',
+  whatsapp2: '5512981386010',
+  email: 'max.automav@hotmail.com',
 
   // Endereço
   address: {
-    street: 'Av. Maria Augusta Fagundes Gomes',
-    number: '339',
-    neighborhood: 'Res. São Paulo',
+    street: 'R. Timbiras',
+    number: '93',
+    neighborhood: 'Jardim Luiza',
     city: 'Jacareí',
     state: 'SP',
-    zipCode: '12322-120',
-    full: 'Av. Maria Augusta Fagundes Gomes, 339 - Res. São Paulo, Jacareí/SP',
+    zipCode: '12305-190',
+    full: 'R. Timbiras, 93 - Jardim Luiza, Jacareí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '08:00 às 18:00',
-    saturday: '08:00 às 13:00',
+    weekdays: '09:00 às 18:30',
+    saturday: 'Fechado',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 08h-18h | Sáb: 08h-13h',
+    formatted: 'Seg-Qui: 09h-18h30 | Sex: 09h-18h',
   },
 
   // Redes sociais
   social: {
-    instagram: '',
-    facebook: '',
+    instagram: 'https://instagram.com/maxveiculos.sjc',
+    facebook: 'https://facebook.com/maxveiculos.sjc',
     youtube: '',
     tiktok: '',
   },

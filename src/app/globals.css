@@ -8,17 +8,17 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca - Vermelho #e9290b */
-    --primary: 7 92% 48%;
+    /* Cor principal da marca - Amarelo/Dourado #d4a000 */
+    --primary: 45 100% 42%;
     --primary-foreground: 0 0% 100%;
 
-    /* Cor secundária (CTAs, destaques) - Amarelo #fdaf05 */
-    --secondary: 42 98% 51%;
-    --secondary-foreground: 0 0% 0%;
+    /* Cor secundária (CTAs, destaques) - Cinza escuro */
+    --secondary: 220 13% 26%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Cor de destaque/accent */
-    --accent: 7 92% 96%;
-    --accent-foreground: 7 92% 30%;
+    --accent: 45 100% 95%;
+    --accent-foreground: 45 100% 25%;
 
     /* ========================================
        CORES BASE (geralmente não mudam)
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 7 92% 48%;
+    --ring: 45 100% 42%;
 
     /* Estados */
     --destructive: 0 84% 60%;
@@ -59,22 +59,22 @@
     --radius: 0.5rem;
 
     /* Charts (admin dashboard) */
-    --chart-1: 7 92% 48%;
-    --chart-2: 42 98% 51%;
+    --chart-1: 45 100% 42%;
+    --chart-2: 220 13% 26%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
 
   .dark {
-    --primary: 7 92% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 42 98% 55%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 220 13% 40%;
+    --secondary-foreground: 0 0% 100%;
 
-    --accent: 7 50% 20%;
-    --accent-foreground: 7 92% 90%;
+    --accent: 45 50% 20%;
+    --accent-foreground: 45 100% 80%;
 
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
@@ -90,7 +90,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 7 92% 55%;
+    --ring: 45 100% 50%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -101,8 +101,8 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --chart-1: 7 92% 55%;
-    --chart-2: 42 98% 55%;
+    --chart-1: 45 100% 50%;
+    --chart-2: 220 13% 40%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;

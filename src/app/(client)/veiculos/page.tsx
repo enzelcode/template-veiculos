@@ -122,7 +122,7 @@ function VehiclesContent() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipNkGeLI2AfJoDEndrutUrzyfxyGpdANe2Sj84jv=s1360-w1360-h1020-rw"
+            src="https://lh3.googleusercontent.com/p/AF1QipO_pnfeEkhdtURyXbjWQiAgeYTRQ_r7VGoUsiLx=s1360-w1360-h1020-rw"
             alt=""
             fill
             className="object-cover"
