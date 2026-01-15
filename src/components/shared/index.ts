@@ -3,3 +3,4 @@ export { WhatsAppIcon } from './WhatsAppIcon';
 export { WhatsAppButton } from './WhatsAppButton';
 export { WhatsAppFloat } from './WhatsAppFloat';
 export { AnimateOnScroll } from './AnimateOnScroll';
+export { FinancingForm } from './FinancingForm';

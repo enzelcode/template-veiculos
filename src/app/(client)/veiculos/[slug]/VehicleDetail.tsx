@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { WhatsAppButton } from '@/components/shared';
+import { WhatsAppButton, FinancingForm } from '@/components/shared';
 import { formatCurrency, formatMileage } from '@/lib/utils/formatters';
 import { FUEL_TYPES, TRANSMISSION_TYPES, BODY_TYPES } from '@/constants/vehicles';
 import { SITE_CONFIG } from '@/constants/site';
@@ -263,6 +263,22 @@ export function VehicleDetail({ vehicle }: VehicleDetailProps) {
         slides={vehicle.images.map((src) => ({ src }))}
         on={{ view: ({ index }) => setCurrentImage(index) }}
       />
+
+      {/* Formulário de Financiamento */}
+      <section className="mt-16 py-16 -mx-4 px-4 md:mx-0 md:px-8 bg-zinc-900 md:rounded-2xl">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              <span className="text-white">SIMULAR</span>{' '}
+              <span className="text-primary">FINANCIAMENTO</span>
+            </h2>
+            <p className="text-zinc-400">
+              Pré-análise rápida e sem compromisso. Realize seu sonho hoje.
+            </p>
+          </div>
+          <FinancingForm vehicle={{ name: `${vehicle.title} ${vehicle.year}/${vehicle.yearModel}`, id: vehicle._id }} />
+        </div>
+      </section>
     </div>
   );
 }
