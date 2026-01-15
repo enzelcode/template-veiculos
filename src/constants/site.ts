@@ -47,7 +47,7 @@ export const SITE_CONFIG = {
     main: [
       { label: 'Início', href: '/' },
       { label: 'Veículos', href: '/veiculos' },
-      { label: 'Simule', href: '/simule' },
+      { label: 'Simule Agora', href: '/simule' },
       { label: 'Quem Somos', href: '/quem-somos' },
       { label: 'Contato', href: '/contato' },
     ],

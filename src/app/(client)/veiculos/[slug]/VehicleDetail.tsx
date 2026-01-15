@@ -18,6 +18,7 @@ import {
   Check,
   Share2,
   ArrowLeft,
+  Calculator,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -53,6 +54,7 @@ interface VehicleDetailProps {
 export function VehicleDetail({ vehicle }: VehicleDetailProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [showFinancingForm, setShowFinancingForm] = useState(false);
 
   const nextImage = useCallback(() => {
     setCurrentImage((prev) => (prev + 1) % vehicle.images.length);
@@ -233,6 +235,14 @@ export function VehicleDetail({ vehicle }: VehicleDetailProps) {
             </Button>
           </div>
 
+          <Button
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 text-base shadow-lg hover:shadow-xl transition-all"
+            onClick={() => setShowFinancingForm(true)}
+          >
+            <Calculator className="h-5 w-5 mr-2" />
+            Simule seu Financiamento
+          </Button>
+
           {vehicle.description && (
             <div className="border-t pt-6">
               <h2 className="text-lg font-semibold mb-3">Descrição</h2>
@@ -264,21 +274,32 @@ export function VehicleDetail({ vehicle }: VehicleDetailProps) {
         on={{ view: ({ index }) => setCurrentImage(index) }}
       />
 
-      {/* Formulário de Financiamento */}
-      <section className="mt-16 py-16 -mx-4 px-4 md:mx-0 md:px-8 bg-zinc-900 md:rounded-2xl">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-              <span className="text-white">SIMULAR</span>{' '}
-              <span className="text-primary">FINANCIAMENTO</span>
-            </h2>
-            <p className="text-zinc-400">
-              Pré-análise rápida e sem compromisso. Realize seu sonho hoje.
-            </p>
+      {/* Modal de Financiamento */}
+      {showFinancingForm && (
+        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 bg-black/80 overflow-y-auto">
+          <div className="bg-zinc-900 rounded-2xl p-6 md:p-8 max-w-2xl w-full my-4 relative max-h-[calc(100vh-2rem)] overflow-y-auto">
+            <button
+              onClick={() => setShowFinancingForm(false)}
+              className="absolute top-4 right-4 text-zinc-400 hover:text-white transition-colors z-10"
+            >
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                <span className="text-white">SIMULAR</span>{' '}
+                <span className="text-primary">FINANCIAMENTO</span>
+              </h2>
+              <p className="text-zinc-400">
+                Pré-análise rápida e sem compromisso. Realize seu sonho hoje.
+              </p>
+            </div>
+            <FinancingForm vehicle={{ name: `${vehicle.title} ${vehicle.year}/${vehicle.yearModel}`, id: vehicle._id }} />
           </div>
-          <FinancingForm vehicle={{ name: `${vehicle.title} ${vehicle.year}/${vehicle.yearModel}`, id: vehicle._id }} />
         </div>
-      </section>
+      )}
     </div>
   );
 }
