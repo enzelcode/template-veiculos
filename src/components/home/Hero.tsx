@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Encontre seu próximo carro sem complicação`,
-  subtitle = `Atendimento direto, transparente e com qualidade. Menos burocracia, mais agilidade.`,
+  title = `Nosso propósito é a realização do seu sonho`,
+  subtitle = `Referência em veículos de qualidade e atendimento personalizado.`,
   backgroundImage,
 }: HeroProps) {
   return (

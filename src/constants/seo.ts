@@ -14,6 +14,7 @@ export const DEFAULT_SEO = {
     'motors',
     'seminovos',
     'usados',
+    'çarros seminovos em jacarei',
     'comprar carro',
     'loja de carros',
     SITE_CONFIG.address.city.toLowerCase(),

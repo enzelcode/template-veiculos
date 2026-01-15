@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 import { WhatsAppButton, WhatsAppIcon, AnimateOnScroll } from '@/components/shared';
 import { ContactCTA } from '@/components/home';
 import { SITE_CONFIG } from '@/constants/site';
@@ -17,12 +17,6 @@ const contactInfo = [
     href: `tel:${SITE_CONFIG.phone.replace(/\D/g, '')}`,
   },
   {
-    icon: Mail,
-    label: 'E-mail',
-    value: SITE_CONFIG.email,
-    href: `mailto:${SITE_CONFIG.email}`,
-  },
-  {
     icon: Clock,
     label: 'Horário',
     value: SITE_CONFIG.businessHours.formatted,
@@ -35,7 +29,7 @@ export default function ContatoPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipNEqf8-FJ3H4zKX0pFqcbAlKdDSI5Ct2O7ZwrXi=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200"
             alt=""
             fill
             className="object-cover"
@@ -104,7 +98,7 @@ export default function ContatoPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative h-[400px] lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps?q=R.+Timbiras,+93+-+Jardim+Luiza,+Jacareí+-+SP&output=embed"
+                  src="https://www.google.com/maps?q=Av.+Siqueira+Campos,+525+-+Jardim+Esper,+Jacareí+-+SP&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Max Veículos',
+  name: 'Exclusive Motors',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos e intermediações em Jacareí. Atendemos São José dos Campos e região.',
+  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 98295-5001',
-  whatsapp: '5512982955001',
-  whatsapp2: '5512981386010',
-  email: 'max.automav@hotmail.com',
+  phone: '(12) 98863-7720',
+  whatsapp: '5512988637720',
+  whatsapp2: '',
+  email: '',
 
   // Endereço
   address: {
-    street: 'R. Timbiras',
-    number: '93',
-    neighborhood: 'Jardim Luiza',
+    street: 'Av. Siqueira Campos',
+    number: '525',
+    neighborhood: 'Jardim Esper',
     city: 'Jacareí',
     state: 'SP',
-    zipCode: '12305-190',
-    full: 'R. Timbiras, 93 - Jardim Luiza, Jacareí/SP',
+    zipCode: '12307-000',
+    full: 'Av. Siqueira Campos, 525 - Jardim Esper, Jacareí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 18:30',
-    saturday: 'Fechado',
+    weekdays: '09:00 às 19:30',
+    saturday: '08:00 às 17:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Qui: 09h-18h30 | Sex: 09h-18h',
+    formatted: 'Seg-Sex: 09h-19h30 | Sáb: 08h-17h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/maxveiculos.sjc',
-    facebook: 'https://facebook.com/maxveiculos.sjc',
+    instagram: 'https://instagram.com/exclusive.motorss_',
+    facebook: 'https://facebook.com/ExclusiveMotors',
     youtube: '',
     tiktok: '',
   },

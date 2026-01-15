@@ -17,11 +17,11 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/max.png"
-              alt="Max Veículos"
+              src="/exclusive.png"
+              alt="Exclusive Motors"
               width={140}
               height={70}
-              className="h-20 w-auto object-contain"
+              className="h-16 w-auto object-contain"
               priority
             />
           </Link>

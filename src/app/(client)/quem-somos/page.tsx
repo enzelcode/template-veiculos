@@ -5,16 +5,16 @@ import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const diferenciais = [
-  { icon: Users, label: 'Atendimento sem enrolação' },
-  { icon: Car, label: 'Veículos selecionados' },
-  { icon: ThumbsUp, label: 'Menos burocracia' },
-  { icon: Shield, label: 'Procedência verificada' },
+  { icon: Users, label: 'Atendimento personalizado' },
+  { icon: Car, label: 'Veículos de qualidade' },
+  { icon: ThumbsUp, label: 'Realizamos seu sonho' },
+  { icon: Shield, label: 'Procedência garantida' },
 ];
 
 const values = [
-  'Menos burocracia, mais agilidade',
+  'Atendimento personalizado e exclusivo',
   'Veículos revisados e com procedência',
-  'Atendimento direto e transparente',
+  'Compromisso com a realização do seu sonho',
   'Facilidade no financiamento',
   'Qualidade acima de tudo',
   'Preços justos e competitivos',
@@ -26,7 +26,7 @@ export default function QuemSomosPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipO1yOvxy_eMFX0mECRAO8aYfqlUQ7afOaG-6UKx=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200"
             alt=""
             fill
             className="object-cover"
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipO3-3TwY1hRCc6vMwsTslHuRKH-ixS8rOwQsVtf=s1360-w1360-h1020-rw"
+                    src="https://lh3.googleusercontent.com/p/AF1QipP2SDxl_08UjYoHlLbsGcUSwVMrGOgrKq3HJfw-=s1360-w1360-h1020-rw"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -62,18 +62,17 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Menos burocracia, mais qualidade
+                  Realizando sonhos sobre rodas
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    com uma proposta simples: facilitar a compra do seu próximo carro.
-                    Aqui você não perde tempo com burocracia desnecessária.
+                    com um propósito claro: realizar o seu sonho de ter o carro ideal.
+                    Somos referência em veículos de qualidade e atendimento personalizado.
                   </p>
                   <p>
-                    Nossa equipe é formada por profissionais experientes que vão direto ao ponto.
-                    Sem enrolação, sem promessas vazias. Só veículos de qualidade e atendimento
-                    que respeita o seu tempo.
+                    Nossa equipe é formada por profissionais dedicados a entender suas necessidades
+                    e encontrar o veículo perfeito para você. Atendimento exclusivo do início ao fim.
                   </p>
                   <p>
                     Todos os nossos veículos passam por rigorosa inspeção antes de serem
@@ -132,7 +131,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipNLG7KjquX68JClt-Er8XPzppbFAA69ET7b-r0E=s1360-w1360-h1020-rw"
+                  src="https://lh3.googleusercontent.com/p/AF1QipOa2Vj5Zfu7aV-I-PPNfks4LGhUeq15W1Ub1zE4=s1360-w1360-h1020-rw"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"
