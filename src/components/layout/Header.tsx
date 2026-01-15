@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/exclusive.png"
-              alt="Exclusive Motors"
+              src="/beckar.png"
+              alt="Beckar Motors"
               width={140}
               height={70}
               className="h-16 w-auto object-contain"

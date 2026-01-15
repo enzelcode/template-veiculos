@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Exclusive Motors',
-  slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
+  name: 'Beckar Motors',
+  slogan: 'O seminovo que você procura, está aqui',
+  description: 'Loja de veículos seminovos em Taubaté com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 98863-7720',
-  whatsapp: '5512988637720',
+  phone: '(12) 98881-4071',
+  whatsapp: '5512988814071',
   whatsapp2: '',
-  email: '',
+  email: 'contato@beckarmotors.com.br',
 
   // Endereço
   address: {
-    street: 'Av. Siqueira Campos',
-    number: '525',
-    neighborhood: 'Jardim Esper',
-    city: 'Jacareí',
+    street: 'Av. Assis Chateaubriand',
+    number: '240',
+    neighborhood: 'Independência',
+    city: 'Taubaté',
     state: 'SP',
-    zipCode: '12307-000',
-    full: 'Av. Siqueira Campos, 525 - Jardim Esper, Jacareí/SP',
+    zipCode: '12031-000',
+    full: 'Av. Assis Chateaubriand, 240 - Independência, Taubaté/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 19:30',
-    saturday: '08:00 às 17:00',
+    weekdays: '09:00 às 18:00',
+    saturday: '09:00 às 14:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-19h30 | Sáb: 08h-17h',
+    formatted: 'Seg-Sex: 09h-18h | Sáb: 09h-14h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/exclusive.motorss_',
-    facebook: 'https://facebook.com/ExclusiveMotors',
+    instagram: 'https://instagram.com/beckarr_',
+    facebook: '',
     youtube: '',
     tiktok: '',
   },

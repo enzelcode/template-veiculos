@@ -5,19 +5,19 @@ import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const diferenciais = [
-  { icon: Users, label: 'Atendimento personalizado' },
-  { icon: Car, label: 'Veículos de qualidade' },
-  { icon: ThumbsUp, label: 'Realizamos seu sonho' },
-  { icon: Shield, label: 'Procedência garantida' },
+  { icon: Users, label: 'Atendimento dedicado' },
+  { icon: Car, label: 'Veículos selecionados' },
+  { icon: ThumbsUp, label: 'Satisfação garantida' },
+  { icon: Shield, label: 'Procedência verificada' },
 ];
 
 const values = [
-  'Atendimento personalizado e exclusivo',
   'Veículos revisados e com procedência',
-  'Compromisso com a realização do seu sonho',
+  'Atendimento transparente e honesto',
   'Facilidade no financiamento',
   'Qualidade acima de tudo',
   'Preços justos e competitivos',
+  'Compromisso com o cliente',
 ];
 
 export default function QuemSomosPage() {
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipP2SDxl_08UjYoHlLbsGcUSwVMrGOgrKq3HJfw-=s1360-w1360-h1020-rw"
+                    src="/sobre.jpg"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -62,17 +62,17 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Realizando sonhos sobre rodas
+                  O seminovo que você procura
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    com um propósito claro: realizar o seu sonho de ter o carro ideal.
-                    Somos referência em veículos de qualidade e atendimento personalizado.
+                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> é referência
+                    em seminovos de qualidade em Taubaté e região. Trabalhamos para oferecer
+                    as melhores opções de veículos com procedência garantida.
                   </p>
                   <p>
-                    Nossa equipe é formada por profissionais dedicados a entender suas necessidades
-                    e encontrar o veículo perfeito para você. Atendimento exclusivo do início ao fim.
+                    Nossa equipe está pronta para te ajudar a encontrar o carro ideal,
+                    com atendimento transparente e condições que cabem no seu bolso.
                   </p>
                   <p>
                     Todos os nossos veículos passam por rigorosa inspeção antes de serem
@@ -131,7 +131,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipOa2Vj5Zfu7aV-I-PPNfks4LGhUeq15W1Ub1zE4=s1360-w1360-h1020-rw"
+                  src="/sobre2.jpg"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"

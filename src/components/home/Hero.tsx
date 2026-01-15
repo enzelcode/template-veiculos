@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Nosso propósito é a realização do seu sonho`,
-  subtitle = `Referência em veículos de qualidade e atendimento personalizado.`,
+  title = `O seminovo que você procura, está aqui`,
+  subtitle = `Encontre o carro ideal com as melhores condições de pagamento.`,
   backgroundImage,
 }: HeroProps) {
   return (

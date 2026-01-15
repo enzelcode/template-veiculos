@@ -98,7 +98,7 @@ export default function ContatoPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative h-[400px] lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps?q=Av.+Siqueira+Campos,+525+-+Jardim+Esper,+Jacareí+-+SP&output=embed"
+                  src="https://www.google.com/maps?q=Av.+Assis+Chateaubriand,+240+-+Independência,+Taubaté+-+SP&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

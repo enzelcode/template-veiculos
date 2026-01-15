@@ -8,8 +8,8 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca - Vermelho */
-    --primary: 0 84% 50%;
+    /* Cor principal da marca - Laranja */
+    --primary: 35 95% 50%;
     --primary-foreground: 0 0% 100%;
 
     /* Cor secundária (CTAs, destaques) - Cinza escuro */
@@ -17,8 +17,8 @@
     --secondary-foreground: 0 0% 100%;
 
     /* Cor de destaque/accent */
-    --accent: 0 84% 96%;
-    --accent-foreground: 0 84% 30%;
+    --accent: 35 95% 96%;
+    --accent-foreground: 35 95% 30%;
 
     /* ========================================
        CORES BASE (geralmente não mudam)
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 0 84% 50%;
+    --ring: 35 95% 50%;
 
     /* Estados */
     --destructive: 0 84% 60%;
@@ -59,7 +59,7 @@
     --radius: 0.5rem;
 
     /* Charts (admin dashboard) */
-    --chart-1: 0 84% 50%;
+    --chart-1: 35 95% 50%;
     --chart-2: 220 13% 26%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
@@ -67,14 +67,14 @@
   }
 
   .dark {
-    --primary: 0 84% 55%;
+    --primary: 35 95% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 40%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 0 50% 20%;
-    --accent-foreground: 0 84% 80%;
+    --accent: 35 50% 20%;
+    --accent-foreground: 35 95% 80%;
 
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
@@ -90,7 +90,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 0 84% 55%;
+    --ring: 35 95% 55%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -101,7 +101,7 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --chart-1: 0 84% 55%;
+    --chart-1: 35 95% 55%;
     --chart-2: 220 13% 40%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;
