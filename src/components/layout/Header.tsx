@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/alex.png"
-              alt="Alex Automóveis"
+              src="/dama.png"
+              alt="Dama Seminovos"
               width={140}
               height={70}
               className="h-16 w-auto object-contain"

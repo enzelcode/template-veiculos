@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Alex Automóveis',
+  name: 'Dama Seminovos',
   slogan: 'Seu próximo carro começa aqui',
   description: 'Loja de veículos seminovos com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(49) 99989-1446',
-  whatsapp: '5549999891446',
+  phone: '(12) 98836-5317',
+  whatsapp: '5512988365317',
   whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'R. Quilombo',
-    number: '248 D',
-    neighborhood: 'Efapi',
-    city: 'Chapecó',
-    state: 'SC',
-    zipCode: '89809-520',
-    full: 'R. Quilombo, 248 D - Efapi, Chapecó/SC',
+    street: 'R. Santa Helena',
+    number: '468',
+    neighborhood: 'São João',
+    city: 'Jacareí',
+    state: 'SP',
+    zipCode: '12322-550',
+    full: 'R. Santa Helena, 468 - São João, Jacareí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '07:30 às 18:30',
-    saturday: '07:30 às 12:00',
+    weekdays: '08:30 às 18:00',
+    saturday: '08:30 às 14:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 07h30-18h30 | Sáb: 07h30-12h',
+    formatted: 'Seg-Sex: 08h30-18h | Sáb: 08h30-14h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/alex_automoveis10',
-    facebook: 'https://www.facebook.com/profile.php?id=61575010163319',
+    instagram: 'https://www.instagram.com/damaseminovos/',
+    facebook: '',
     youtube: '',
     tiktok: '',
   },
