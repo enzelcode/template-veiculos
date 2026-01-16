@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Exclusive Motors',
+  name: 'Alex Automóveis',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 98863-7720',
-  whatsapp: '5512988637720',
+  phone: '(49) 99989-1446',
+  whatsapp: '5549999891446',
   whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'Av. Siqueira Campos',
-    number: '525',
-    neighborhood: 'Jardim Esper',
-    city: 'Jacareí',
-    state: 'SP',
-    zipCode: '12307-000',
-    full: 'Av. Siqueira Campos, 525 - Jardim Esper, Jacareí/SP',
+    street: 'R. Quilombo',
+    number: '248 D',
+    neighborhood: 'Efapi',
+    city: 'Chapecó',
+    state: 'SC',
+    zipCode: '89809-520',
+    full: 'R. Quilombo, 248 D - Efapi, Chapecó/SC',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 19:30',
-    saturday: '08:00 às 17:00',
+    weekdays: '07:30 às 18:30',
+    saturday: '07:30 às 12:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-19h30 | Sáb: 08h-17h',
+    formatted: 'Seg-Sex: 07h30-18h30 | Sáb: 07h30-12h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/exclusive.motorss_',
-    facebook: 'https://facebook.com/ExclusiveMotors',
+    instagram: 'https://instagram.com/alex_automoveis10',
+    facebook: 'https://www.facebook.com/profile.php?id=61575010163319',
     youtube: '',
     tiktok: '',
   },
