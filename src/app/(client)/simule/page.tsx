@@ -42,9 +42,9 @@ export default function SimulePage() {
     <div>
       {/* Hero */}
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=1200"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxMQdtaaRcMOndX27uCVCoAvGcr-OkNBEqeB01doQhc-TQO1a6CwKpLjhrS6OsPanqukC0DJGVh3yLNNNNQr0t9GSwqlCgqSOpz2JBpMwOkQ1-iWSHQ-iTVtnWM_xeDfn13oPVtyhLZCfbh=s1360-w1360-h1020-rw"
             alt=""
             fill
             className="object-cover"

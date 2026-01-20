@@ -5,39 +5,39 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Exclusive Motors',
+  name: 'Impacta Multimarcas',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Jacareí com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos em Mogi das Cruzes com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(12) 98863-7720',
-  whatsapp: '5512988637720',
+  phone: '(11) 91610-7656',
+  whatsapp: '5511916107656',
   whatsapp2: '',
-  email: '',
+  email: 'impactamultimarcas@gmail.com',
 
   // Endereço
   address: {
-    street: 'Av. Siqueira Campos',
-    number: '525',
-    neighborhood: 'Jardim Esper',
-    city: 'Jacareí',
+    street: 'R. Ten. Manoel Alves dos Anjos',
+    number: '571',
+    neighborhood: 'Centro',
+    city: 'Mogi das Cruzes',
     state: 'SP',
-    zipCode: '12307-000',
-    full: 'Av. Siqueira Campos, 525 - Jardim Esper, Jacareí/SP',
+    zipCode: '08710-680',
+    full: 'R. Ten. Manoel Alves dos Anjos, 571 - Centro, Mogi das Cruzes/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 19:30',
-    saturday: '08:00 às 17:00',
+    weekdays: '09:00 às 18:00',
+    saturday: 'Fechado',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-19h30 | Sáb: 08h-17h',
+    formatted: 'Seg-Sex: 09h-18h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://instagram.com/exclusive.motorss_',
-    facebook: 'https://facebook.com/ExclusiveMotors',
+    instagram: 'https://www.instagram.com/impacta_multimarcas/',
+    facebook: '',
     youtube: '',
     tiktok: '',
   },

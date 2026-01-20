@@ -14,13 +14,13 @@ function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/exclusive.png"
-              alt="Exclusive Motors"
+              src="/impacta.png"
+              alt="Impacta Multimarcas"
               width={150}
               height={80}
               className="h-20 w-auto object-contain mb-4"
             />
-            <p className="text-sm text-zinc-400 mb-4">Seminovos selecionados em Jacareí.</p>
+            <p className="text-sm text-zinc-400 mb-4">Seminovos selecionados em Mogi das Cruzes.</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a

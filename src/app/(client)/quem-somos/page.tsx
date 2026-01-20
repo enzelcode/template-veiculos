@@ -24,9 +24,9 @@ export default function QuemSomosPage() {
   return (
     <div>
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz8k40Ldor8oEjKPvl0Njh9fJsMVPi6HmtkCfrrrqAaa5kLZGWog3OglLXCqNZgV3AYTHuqbMP9fZJPagNp2gjAB4jQvsZpmyZI6z5ucCIwJAsiQvKtlQ91C4HIltSaq3ZSJrwA=s1360-w1360-h1020-rw"
             alt=""
             fill
             className="object-cover"
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipP2SDxl_08UjYoHlLbsGcUSwVMrGOgrKq3HJfw-=s1360-w1360-h1020-rw"
+                    src="https://lh3.googleusercontent.com/p/AF1QipPEd4HlvkUGwpTkgaU9OCPKWziPQqbsy1dagyHK=s1360-w1360-h1020-rw"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -131,7 +131,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipOa2Vj5Zfu7aV-I-PPNfks4LGhUeq15W1Ub1zE4=s1360-w1360-h1020-rw"
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz8k40Ldor8oEjKPvl0Njh9fJsMVPi6HmtkCfrrrqAaa5kLZGWog3OglLXCqNZgV3AYTHuqbMP9fZJPagNp2gjAB4jQvsZpmyZI6z5ucCIwJAsiQvKtlQ91C4HIltSaq3ZSJrwA=s1360-w1360-h1020-rw"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"

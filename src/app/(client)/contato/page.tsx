@@ -27,9 +27,9 @@ export default function ContatoPage() {
   return (
     <div>
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_6OD8KUAULz2oaL-_39qU2T20puvW8VI6lmZZAm_JilJ7xg3jXnoGhfHiFWcNclH96PnoDSFTAtm4Pc7veGkcEHnwSWBGscIu2rJ5MPdZheuTQyXdL91F2MNXTb3sPF8IQdOd3Q=s1360-w1360-h1020-rw"
             alt=""
             fill
             className="object-cover"
@@ -98,7 +98,7 @@ export default function ContatoPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative h-[400px] lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps?q=Av.+Siqueira+Campos,+525+-+Jardim+Esper,+Jacareí+-+SP&output=embed"
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(SITE_CONFIG.address.full)}&output=embed`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
