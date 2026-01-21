@@ -5,7 +5,7 @@ import connectDB from '@/lib/db/mongodb';
 import { Simulation } from '@/lib/db/models';
 
 // GET /api/simulations - List all simulations (requires auth)
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     const session = await getServerSession(authOptions);
     if (!session) {

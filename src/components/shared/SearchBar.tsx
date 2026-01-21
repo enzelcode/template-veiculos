@@ -37,7 +37,6 @@ function SearchBarComponent({
   const [search, setSearch] = useState(defaultValue);
   const [isOpen, setIsOpen] = useState(false);
   const [filteredVehicles, setFilteredVehicles] = useState<Vehicle[]>([]);
-  const [loading, setLoading] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,7 +46,6 @@ function SearchBarComponent({
         return;
       }
 
-      setLoading(true);
       try {
         const response = await fetch(`/api/vehicles?search=${encodeURIComponent(search.trim())}&limit=5&status=available`);
         const data = await response.json();
@@ -55,8 +53,6 @@ function SearchBarComponent({
       } catch (error) {
         console.error('Erro ao buscar veículos:', error);
         setFilteredVehicles([]);
-      } finally {
-        setLoading(false);
       }
     };
 
