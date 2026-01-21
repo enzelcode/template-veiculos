@@ -75,6 +75,9 @@ async function getFeaturedVehicles() {
   }));
 }
 
+// Revalidar a cada 60 segundos
+export const revalidate = 60;
+
 export default async function HomePage() {
   const featuredVehicles = await getFeaturedVehicles();
 
