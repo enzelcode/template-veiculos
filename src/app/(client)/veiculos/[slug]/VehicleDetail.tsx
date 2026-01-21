@@ -110,8 +110,8 @@ export function VehicleDetail({ vehicle }: VehicleDetailProps) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="space-y-4">
-          <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-zinc-100">
+        <div className="flex flex-col gap-4">
+          <div className="relative flex-1 min-h-[400px] lg:min-h-[500px] rounded-lg overflow-hidden bg-zinc-100">
             {vehicle.images.length > 0 ? (
               <button
                 onClick={() => setLightboxOpen(true)}
@@ -242,29 +242,38 @@ export function VehicleDetail({ vehicle }: VehicleDetailProps) {
             <Calculator className="h-5 w-5 mr-2" />
             Simule seu Financiamento
           </Button>
-
-          {vehicle.description && (
-            <div className="border-t pt-6">
-              <h2 className="text-lg font-semibold mb-3">Descrição</h2>
-              <p className="text-muted-foreground leading-relaxed">{vehicle.description}</p>
-            </div>
-          )}
-
-          {vehicle.features.length > 0 && (
-            <div className="border-t pt-6">
-              <h2 className="text-lg font-semibold mb-4">Opcionais</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {vehicle.features.map((feature) => (
-                  <div key={feature} className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span className="text-sm">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </div>
+
+      {/* Descrição e Opcionais */}
+      {(vehicle.description || vehicle.features.length > 0) && (
+        <div className="mt-12 border-t pt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Descrição */}
+            {vehicle.description && (
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Descrição</h2>
+                <p className="text-muted-foreground leading-relaxed">{vehicle.description}</p>
+              </div>
+            )}
+
+            {/* Opcionais */}
+            {vehicle.features.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Opcionais</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {vehicle.features.map((feature) => (
+                    <div key={feature} className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                      <span className="text-base">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       <Lightbox
         open={lightboxOpen}

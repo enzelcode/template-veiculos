@@ -12,6 +12,7 @@ import {
   User,
   Users,
   X,
+  Calculator,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -27,6 +28,11 @@ const menuItems = [
     label: 'Veículos',
     href: '/admin/veiculos',
     icon: Car,
+  },
+  {
+    label: 'Simulações',
+    href: '/admin/simulacoes',
+    icon: Calculator,
   },
   {
     label: 'Usuários',

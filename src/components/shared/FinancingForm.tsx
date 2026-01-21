@@ -87,24 +87,70 @@ export function FinancingForm({ vehicle, vehicles }: FinancingFormProps) {
     e.preventDefault();
     setLoading(true);
 
-    // Simular envio (aqui você pode integrar com uma API real depois)
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      // Parse entrada (currency) to number
+      let entradaNumber = 0;
+      if (formData.entrada) {
+        const cleanEntrada = formData.entrada.replace(/[^\d]/g, '');
+        entradaNumber = parseInt(cleanEntrada) / 100;
+      }
 
-    // Mostrar popup de sucesso
-    setShowSuccess(true);
-    setLoading(false);
+      // Parse installments number
+      const installmentsNumber = parseInt(formData.parcelas.replace('x', ''));
 
-    // Limpar formulário
-    setFormData({
-      nome: '',
-      whatsapp: '',
-      cpf: '',
-      nascimento: '',
-      veiculo: vehicle?.name || '',
-      entrada: '',
-      parcelas: '48x',
-      troca: 'Não, somente financiamento',
-    });
+      // Create phone without formatting
+      const phoneClean = formData.whatsapp.replace(/\D/g, '');
+
+      const payload = {
+        name: formData.nome,
+        email: `${phoneClean}@temp.com`,
+        phone: phoneClean,
+        cpf: formData.cpf,
+        birthDate: formData.nascimento,
+        vehicleInterest: formData.veiculo,
+        hasTrade: formData.troca,
+        vehicleValue: 0,
+        downPayment: entradaNumber,
+        installments: installmentsNumber,
+      };
+
+      console.log('Enviando simulação:', payload);
+
+      const response = await fetch('/api/simulations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      console.log('Resposta da API:', data);
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erro ao enviar simulação');
+      }
+
+      // Mostrar popup de sucesso
+      setShowSuccess(true);
+
+      // Limpar formulário
+      setFormData({
+        nome: '',
+        whatsapp: '',
+        cpf: '',
+        nascimento: '',
+        veiculo: vehicle?.name || '',
+        entrada: '',
+        parcelas: '48x',
+        troca: 'Não, somente financiamento',
+      });
+    } catch (error) {
+      console.error('Error submitting simulation:', error);
+      alert(`Erro ao enviar simulação: ${error instanceof Error ? error.message : 'Erro desconhecido'}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass = "w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors";

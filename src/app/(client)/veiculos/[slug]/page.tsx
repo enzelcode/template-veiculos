@@ -6,7 +6,7 @@ import { VehicleDetail } from './VehicleDetail';
 import { getVehicleBySlug } from '@/lib/mock/vehicles';
 
 // Flag para usar dados mockados (mudar para false quando conectar ao banco real)
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
 interface PageProps {
   params: Promise<{ slug: string }>;
