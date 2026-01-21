@@ -29,7 +29,7 @@ export default function ContatoPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_6OD8KUAULz2oaL-_39qU2T20puvW8VI6lmZZAm_JilJ7xg3jXnoGhfHiFWcNclH96PnoDSFTAtm4Pc7veGkcEHnwSWBGscIu2rJ5MPdZheuTQyXdL91F2MNXTb3sPF8IQdOd3Q=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1360&h=1020&fit=crop"
             alt=""
             fill
             className="object-cover"
@@ -59,7 +59,7 @@ export default function ContatoPage() {
                   {contactInfo.map(({ icon: Icon, label, value, href }, index) => (
                     <AnimateOnScroll key={label} animation="fadeUp" delay={index * 100}>
                       <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-zinc-50 transition-all duration-300">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                        <div className="flex-shrink-0 w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center">
                           <Icon className="h-6 w-6 text-primary" />
                         </div>
                         <div>

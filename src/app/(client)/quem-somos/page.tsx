@@ -26,7 +26,7 @@ export default function QuemSomosPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz8k40Ldor8oEjKPvl0Njh9fJsMVPi6HmtkCfrrrqAaa5kLZGWog3OglLXCqNZgV3AYTHuqbMP9fZJPagNp2gjAB4jQvsZpmyZI6z5ucCIwJAsiQvKtlQ91C4HIltSaq3ZSJrwA=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1360&h=1020&fit=crop"
             alt=""
             fill
             className="object-cover"
@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipPEd4HlvkUGwpTkgaU9OCPKWziPQqbsy1dagyHK=s1360-w1360-h1020-rw"
+                    src="https://lh3.googleusercontent.com/p/AF1QipMX_RO6iTP0mi-AZ3mpE9g_lACLDyHZqWiLM1gr=s1360-w1360-h1020-rw"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -66,7 +66,8 @@ export default function QuemSomosPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
+                    <strong className="text-foreground">Há 30 anos no ramo de automóveis</strong>, a{' '}
+                    <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
                     com um propósito claro: realizar o seu sonho de ter o carro ideal.
                     Somos referência em veículos de qualidade e atendimento personalizado.
                   </p>
@@ -131,7 +132,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz8k40Ldor8oEjKPvl0Njh9fJsMVPi6HmtkCfrrrqAaa5kLZGWog3OglLXCqNZgV3AYTHuqbMP9fZJPagNp2gjAB4jQvsZpmyZI6z5ucCIwJAsiQvKtlQ91C4HIltSaq3ZSJrwA=s1360-w1360-h1020-rw"
+                  src="https://lh3.googleusercontent.com/proxy/Zm3nis37TRkgYmpdyt9BHLCAmLdoMXIcA9pLD8XwP7e44DR-vWfboVHgXxMuiea_EZzVCcxDubElGROfWBZlcaUccPS_ASXdIkcqUf6gc9UANhhuu5PJ2CST6PdtTLDQYckco4UL2Qs3U99oJlpOEP2yy1brew89-urSPg=s1360-w1360-h1020-rw"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"

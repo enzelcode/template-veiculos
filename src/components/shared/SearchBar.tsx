@@ -102,7 +102,7 @@ function SearchBarComponent({
           className={`
             pl-10
             ${variant === 'default'
-              ? 'h-10 bg-zinc-800 border-zinc-700 text-white placeholder:text-zinc-400 focus:border-zinc-500 focus:ring-zinc-500'
+              ? 'h-10 bg-white border-zinc-300 text-black placeholder:text-zinc-500 focus:border-zinc-400 focus:ring-zinc-400'
               : 'h-9 bg-white border-zinc-200'
             }
           `}

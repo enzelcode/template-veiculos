@@ -5,38 +5,38 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Impacta Multimarcas',
+  name: 'Lider Veículos',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Mogi das Cruzes com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos em Jundiaí com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(11) 91610-7656',
-  whatsapp: '5511916107656',
+  phone: '(11) 4817-1918',
+  whatsapp: '551148171918',
   whatsapp2: '',
-  email: 'impactamultimarcas@gmail.com',
+  email: 'liderjeviculojundiai@gmail.com',
 
   // Endereço
   address: {
-    street: 'R. Ten. Manoel Alves dos Anjos',
-    number: '571',
-    neighborhood: 'Centro',
-    city: 'Mogi das Cruzes',
+    street: 'Av. Antônio Frederico Ozanan',
+    number: '3802',
+    neighborhood: 'Vila de Vito',
+    city: 'Jundiaí',
     state: 'SP',
-    zipCode: '08710-680',
-    full: 'R. Ten. Manoel Alves dos Anjos, 571 - Centro, Mogi das Cruzes/SP',
+    zipCode: '13215-010',
+    full: 'Av. Antônio Frederico Ozanan, 3802 - Vila de Vito, Jundiaí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '09:00 às 18:00',
-    saturday: 'Fechado',
+    weekdays: '09:00 às 17:00',
+    saturday: '09:00 às 12:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-18h',
+    formatted: 'Seg-Sex: 09h-17h | Sáb: 09h-12h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/impacta_multimarcas/',
+    instagram: '',
     facebook: '',
     youtube: '',
     tiktok: '',

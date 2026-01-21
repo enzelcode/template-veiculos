@@ -62,7 +62,7 @@ function VehicleCardComponent({ vehicle }: VehicleCardProps) {
             {vehicle.title}
           </h3>
 
-          <p className="text-2xl font-bold text-primary mb-4">
+          <p className="text-2xl font-bold text-zinc-900 mb-4">
             {formatCurrency(vehicle.price)}
           </p>
 
