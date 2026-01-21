@@ -5,38 +5,38 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Galvão Motors',
+  name: 'Podiumm',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Jundiaí com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos em São José dos Campos com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(11) 94928-2366',
-  whatsapp: '5511949282366',
-  whatsapp2: '',
+  phone: '(12) 98222-3508',
+  whatsapp: '5512982223508',
+  whatsapp2: '5512974094296',
   email: '',
 
   // Endereço
   address: {
-    street: 'Rua Barão de Teffé',
-    number: '',
-    neighborhood: 'Jardim Ana Maria',
-    city: 'Jundiaí',
+    street: 'Av. Guadalupe',
+    number: '490',
+    neighborhood: 'Jardim America',
+    city: 'São José dos Campos',
     state: 'SP',
-    zipCode: '13208-760',
-    full: 'R. Barão de Teffé - Jardim Ana Maria, Jundiaí/SP',
+    zipCode: '12235-000',
+    full: 'Av. Guadalupe, 490 - Jardim America, São José dos Campos/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
     weekdays: '09:00 às 18:00',
-    saturday: 'Fechado',
+    saturday: '09:00 às 14:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-18h | Sáb-Dom: Fechado',
+    formatted: 'Seg-Sex: 09h-18h | Sáb: 09h-14h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/galvao.motors/',
+    instagram: 'https://www.instagram.com/podiummveiculos/',
     facebook: '',
     youtube: '',
     tiktok: '',

@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 
 function HeaderComponent() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#0219a9] border-b border-blue-900">
+    <header className="sticky top-0 z-50 w-full bg-zinc-900 border-b border-zinc-800">
       <div className="container-custom">
         <div className="flex h-24 items-center justify-between gap-4">
           <Link
@@ -17,11 +17,11 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/galvao.png"
-              alt="Galvão Motors"
-              width={220}
-              height={110}
-              className="h-24 w-auto object-contain"
+              src="/podiumm.png"
+              alt="Podiumm"
+              width={160}
+              height={80}
+              className="h-16 w-auto object-contain"
               priority
             />
           </Link>
@@ -35,7 +35,7 @@ function HeaderComponent() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white hover:text-blue-200 transition-colors"
+                className="text-sm font-medium text-zinc-300 hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>
