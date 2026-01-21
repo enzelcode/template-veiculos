@@ -31,7 +31,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
 
       {/* Main content */}
       <div className="lg:pl-64">
-        <main className="p-4 lg:p-6">{children}</main>
+        <main className="p-4 lg:p-6 overflow-x-auto">{children}</main>
       </div>
     </div>
   );

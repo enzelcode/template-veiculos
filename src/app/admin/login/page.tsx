@@ -3,7 +3,8 @@
 import { useState, Suspense } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Car, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -51,8 +52,14 @@ function LoginForm() {
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
         <div className="flex justify-center mb-4">
-          <div className="h-12 w-12 bg-primary rounded-xl flex items-center justify-center">
-            <Car className="h-7 w-7 text-white" />
+          <div className="h-20 w-40 bg-zinc-800 rounded-xl flex items-center justify-center p-2">
+            <Image
+              src="/exclusive.png"
+              alt={SITE_CONFIG.name}
+              width={140}
+              height={70}
+              className="h-auto w-auto object-contain"
+            />
           </div>
         </div>
         <CardTitle className="text-2xl">{SITE_CONFIG.name}</CardTitle>

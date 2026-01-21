@@ -1,12 +1,11 @@
 'use client';
 
-import { memo, useState, useCallback, useMemo, useRef, useEffect } from 'react';
+import { memo, useState, useCallback, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
-import { MOCK_VEHICLES } from '@/lib/mock/vehicles';
 import { formatCurrency } from '@/lib/utils/formatters';
 
 interface SearchBarProps {
@@ -14,6 +13,18 @@ interface SearchBarProps {
   className?: string;
   variant?: 'default' | 'minimal';
   defaultValue?: string;
+}
+
+interface Vehicle {
+  _id: string;
+  title: string;
+  brand: string;
+  model: string;
+  year: number;
+  mileage: number;
+  price: number;
+  featuredImage: string;
+  slug: string;
 }
 
 function SearchBarComponent({
@@ -25,17 +36,32 @@ function SearchBarComponent({
   const router = useRouter();
   const [search, setSearch] = useState(defaultValue);
   const [isOpen, setIsOpen] = useState(false);
+  const [filteredVehicles, setFilteredVehicles] = useState<Vehicle[]>([]);
+  const [loading, setLoading] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const filteredVehicles = useMemo(() => {
-    if (!search.trim()) return [];
-    const query = search.toLowerCase();
-    return MOCK_VEHICLES.filter(
-      (v) =>
-        v.title.toLowerCase().includes(query) ||
-        v.brand.toLowerCase().includes(query) ||
-        v.model.toLowerCase().includes(query)
-    ).slice(0, 5);
+  useEffect(() => {
+    const fetchVehicles = async () => {
+      if (!search.trim()) {
+        setFilteredVehicles([]);
+        return;
+      }
+
+      setLoading(true);
+      try {
+        const response = await fetch(`/api/vehicles?search=${encodeURIComponent(search.trim())}&limit=5&status=available`);
+        const data = await response.json();
+        setFilteredVehicles(data.vehicles || []);
+      } catch (error) {
+        console.error('Erro ao buscar veículos:', error);
+        setFilteredVehicles([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const debounceTimeout = setTimeout(fetchVehicles, 300);
+    return () => clearTimeout(debounceTimeout);
   }, [search]);
 
   const handleSubmit = useCallback(

@@ -8,7 +8,7 @@ import Vehicle from '@/lib/db/models/Vehicle';
 import { getFeaturedVehicles as getMockFeaturedVehicles } from '@/lib/mock/vehicles';
 
 // Flag para usar dados mockados (mudar para false quando conectar ao banco real)
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
 async function getFeaturedVehicles() {
   // Usar dados mockados

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import {
@@ -9,6 +10,7 @@ import {
   LogOut,
   ExternalLink,
   User,
+  Users,
   X,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -25,6 +27,11 @@ const menuItems = [
     label: 'Veículos',
     href: '/admin/veiculos',
     icon: Car,
+  },
+  {
+    label: 'Usuários',
+    href: '/admin/usuarios',
+    icon: Users,
   },
   {
     label: 'Meu Perfil',
@@ -59,9 +66,17 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
       >
         <div className="flex h-full flex-col">
           {/* Logo */}
-          <div className="flex h-16 items-center justify-between border-b px-6">
-            <Link href="/admin" className="font-bold text-xl">
-              {SITE_CONFIG.name}
+          <div className="flex h-16 items-center justify-between border-b px-4 lg:px-6">
+            <Link href="/admin" className="flex items-center">
+              <div className="bg-zinc-800 rounded-lg px-2 py-1.5 lg:px-3 lg:py-2">
+                <Image
+                  src="/exclusive.png"
+                  alt={SITE_CONFIG.name}
+                  width={100}
+                  height={50}
+                  className="h-6 lg:h-8 w-auto object-contain"
+                />
+              </div>
             </Link>
             <Button
               variant="ghost"

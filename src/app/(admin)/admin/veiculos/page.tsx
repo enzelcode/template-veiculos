@@ -48,13 +48,13 @@ export default async function VeiculosAdminPage() {
         description={`${vehicles.length} veículos cadastrados`}
       />
 
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-6">
-          <div className="relative w-80">
+      <div className="p-4 lg:p-6">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 mb-6">
+          <div className="relative flex-1 max-w-md">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input placeholder="Buscar veículos..." className="pl-10" />
+            <Input placeholder="Buscar veículos..." className="pl-10 w-full" />
           </div>
-          <Button asChild>
+          <Button asChild className="w-full sm:w-auto">
             <Link href="/admin/veiculos/novo">
               <Plus className="mr-2 h-4 w-4" />
               Novo Veículo
@@ -62,8 +62,8 @@ export default async function VeiculosAdminPage() {
           </Button>
         </div>
 
-        <div className="rounded-lg border bg-white">
-          <Table>
+        <div className="rounded-lg border bg-white overflow-x-auto">
+          <Table className="min-w-[600px]">
             <TableHeader>
               <TableRow>
                 <TableHead className="w-16"></TableHead>

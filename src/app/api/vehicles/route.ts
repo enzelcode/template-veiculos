@@ -4,7 +4,7 @@ import { Vehicle } from '@/lib/db/models';
 import { MOCK_VEHICLES_FULL } from '@/lib/mock/vehicles';
 
 // Flag para usar dados mockados (mudar para false quando conectar ao banco real)
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
 // GET /api/vehicles - Listar veículos com filtros e paginação
 export async function GET(request: NextRequest) {
