@@ -8,8 +8,8 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca - Vermelho Escuro #8c221f */
-    --primary: 3 75% 34%;
+    /* Cor principal da marca - Azul #0219a9 */
+    --primary: 217 97% 34%;
     --primary-foreground: 0 0% 100%;
 
     /* Cor secundária (CTAs, destaques) - Cinza escuro */
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 3 75% 34%;
+    --ring: 217 97% 34%;
 
     /* Estados */
     --destructive: 0 84% 60%;
@@ -59,7 +59,7 @@
     --radius: 0.5rem;
 
     /* Charts (admin dashboard) */
-    --chart-1: 3 75% 34%;
+    --chart-1: 217 97% 34%;
     --chart-2: 220 13% 26%;
     --chart-3: 38 92% 50%;
     --chart-4: 280 65% 60%;

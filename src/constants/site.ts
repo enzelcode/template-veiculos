@@ -5,38 +5,38 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'DRZ Motors',
+  name: 'Galvão Motors',
   slogan: 'Seu próximo carro começa aqui',
   description: 'Loja de veículos seminovos em Jundiaí com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(11) 3964-3991',
-  whatsapp: '5511997447746',
+  phone: '(11) 94928-2366',
+  whatsapp: '5511949282366',
   whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'Rua Conde de Monsanto',
-    number: '502',
-    neighborhood: 'Vila Vianelo',
+    street: 'Rua Barão de Teffé',
+    number: '',
+    neighborhood: 'Jardim Ana Maria',
     city: 'Jundiaí',
     state: 'SP',
-    zipCode: '13207-060',
-    full: 'Rua Conde de Monsanto, 502 - Vila Vianelo, Jundiaí/SP',
+    zipCode: '13208-760',
+    full: 'R. Barão de Teffé - Jardim Ana Maria, Jundiaí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
     weekdays: '09:00 às 18:00',
-    saturday: '09:00 às 13:00',
+    saturday: 'Fechado',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-18h | Sáb: 09h-13h',
+    formatted: 'Seg-Sex: 09h-18h | Sáb-Dom: Fechado',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/drzmotors/',
+    instagram: 'https://www.instagram.com/galvao.motors/',
     facebook: '',
     youtube: '',
     tiktok: '',
