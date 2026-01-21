@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 
 function HeaderComponent() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-zinc-900 border-b border-zinc-800">
+    <header className="sticky top-0 z-50 w-full bg-zinc-100 border-b border-zinc-200">
       <div className="container-custom">
         <div className="flex h-24 items-center justify-between gap-4">
           <Link
@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/impacta.png"
-              alt="Impacta Multimarcas"
+              src="/drz.png"
+              alt="DRZ Motors"
               width={140}
               height={70}
               className="h-16 w-auto object-contain"
@@ -35,7 +35,7 @@ function HeaderComponent() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+                className="text-sm font-medium text-zinc-700 hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>

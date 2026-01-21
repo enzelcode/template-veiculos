@@ -5,38 +5,38 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Impacta Multimarcas',
+  name: 'DRZ Motors',
   slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em Mogi das Cruzes com os melhores preços e condições de pagamento.',
+  description: 'Loja de veículos seminovos em Jundiaí com os melhores preços e condições de pagamento.',
 
   // Contato
-  phone: '(11) 91610-7656',
-  whatsapp: '5511916107656',
+  phone: '(11) 3964-3991',
+  whatsapp: '5511997447746',
   whatsapp2: '',
-  email: 'impactamultimarcas@gmail.com',
+  email: '',
 
   // Endereço
   address: {
-    street: 'R. Ten. Manoel Alves dos Anjos',
-    number: '571',
-    neighborhood: 'Centro',
-    city: 'Mogi das Cruzes',
+    street: 'Rua Conde de Monsanto',
+    number: '502',
+    neighborhood: 'Vila Vianelo',
+    city: 'Jundiaí',
     state: 'SP',
-    zipCode: '08710-680',
-    full: 'R. Ten. Manoel Alves dos Anjos, 571 - Centro, Mogi das Cruzes/SP',
+    zipCode: '13207-060',
+    full: 'Rua Conde de Monsanto, 502 - Vila Vianelo, Jundiaí/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
     weekdays: '09:00 às 18:00',
-    saturday: 'Fechado',
+    saturday: '09:00 às 13:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 09h-18h',
+    formatted: 'Seg-Sex: 09h-18h | Sáb: 09h-13h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/impacta_multimarcas/',
+    instagram: 'https://www.instagram.com/drzmotors/',
     facebook: '',
     youtube: '',
     tiktok: '',

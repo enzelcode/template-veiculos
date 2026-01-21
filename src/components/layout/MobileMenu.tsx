@@ -20,7 +20,7 @@ function MobileMenuComponent() {
         <Button
           variant="ghost"
           size="icon"
-          className="text-white hover:bg-zinc-800"
+          className="text-zinc-700 hover:bg-zinc-200"
         >
           <Menu className="h-6 w-6" />
           <span className="sr-only">Abrir menu</span>

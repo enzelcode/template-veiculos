@@ -29,7 +29,7 @@ export default function ContatoPage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx_6OD8KUAULz2oaL-_39qU2T20puvW8VI6lmZZAm_JilJ7xg3jXnoGhfHiFWcNclH96PnoDSFTAtm4Pc7veGkcEHnwSWBGscIu2rJ5MPdZheuTQyXdL91F2MNXTb3sPF8IQdOd3Q=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1360&h=1020&fit=crop"
             alt=""
             fill
             className="object-cover"

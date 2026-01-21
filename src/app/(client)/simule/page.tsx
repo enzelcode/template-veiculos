@@ -44,7 +44,7 @@ export default function SimulePage() {
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxMQdtaaRcMOndX27uCVCoAvGcr-OkNBEqeB01doQhc-TQO1a6CwKpLjhrS6OsPanqukC0DJGVh3yLNNNNQr0t9GSwqlCgqSOpz2JBpMwOkQ1-iWSHQ-iTVtnWM_xeDfn13oPVtyhLZCfbh=s1360-w1360-h1020-rw"
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1360&h=1020&fit=crop"
             alt=""
             fill
             className="object-cover"
