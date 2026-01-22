@@ -47,7 +47,7 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipNAEMeOV96t6NktRTrSRlENUH5pdl5DHe-u_TLC=s1360-w1360-h1020-rw"
+                    src="https://lh3.googleusercontent.com/p/AF1QipMQYRNM0W3zM7nHu1k37pIk1_p7xcJOMHPJRVZo=s1360-w1360-h1020-rw"
                     alt="Showroom de veículos"
                     fill
                     className="object-cover"
@@ -131,7 +131,7 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipOs0FkItas1uhM6hPu0KgsGkZEyAgcfZFvhQVDQ=s1360-w1360-h1020-rw"
+                  src="https://lh3.googleusercontent.com/p/AF1QipNZ41FayqqmJj54OZ5Dl4vGFxn_vZJR5Ajy2V9m=s1360-w1360-h1020-rw"
                   alt="Por que nos escolher"
                   fill
                   className="object-cover"
