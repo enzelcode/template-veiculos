@@ -9,7 +9,7 @@ A branch `main` serve como template base, e cada cliente terá sua própria bran
 
 ## Stack Tecnológico
 
-| Tecnologia | Versão | Uso |
+| Tecnologkia | Versão | Uso |
 |------------|--------|-----|
 | Next.js | 14.x | Framework fullstack (App Router) |
 | TypeScript | 5.x | Tipagem estática |
