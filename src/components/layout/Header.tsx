@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 
 function HeaderComponent() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-zinc-900 border-b border-zinc-800">
+    <header className="sticky top-0 z-50 w-full bg-[#3ab455] border-b border-[#2d8f42]">
       <div className="container-custom">
         <div className="flex h-24 items-center justify-between gap-4">
           <Link
@@ -35,7 +35,7 @@ function HeaderComponent() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-zinc-300 hover:text-primary transition-colors"
+                className="text-sm font-medium text-white hover:text-zinc-900 transition-colors"
               >
                 {link.label}
               </Link>
