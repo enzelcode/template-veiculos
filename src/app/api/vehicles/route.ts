@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
 
     // Paginação
     const page = parseInt(searchParams.get('page') || '1');
-    const limit = parseInt(searchParams.get('limit') || '12');
+    const limit = parseInt(searchParams.get('limit') || '40');
 
     // Filtros
     const brand = searchParams.get('brand');
