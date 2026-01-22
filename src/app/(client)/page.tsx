@@ -7,6 +7,8 @@ import { connectDB } from '@/lib/db/mongodb';
 import Vehicle from '@/lib/db/models/Vehicle';
 import { getFeaturedVehicles as getMockFeaturedVehicles } from '@/lib/mock/vehicles';
 
+// Home page with featured vehicles
+
 // Flag para usar dados mockados (mudar para false quando conectar ao banco real)
 const USE_MOCK_DATA = false;
 
