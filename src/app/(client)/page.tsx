@@ -53,6 +53,7 @@ async function getFeaturedVehicles() {
       slug: v.slug,
       status: v.status,
       featured: v.featured,
+      badges: v.badges || [],
     }));
   }
 
@@ -74,6 +75,7 @@ async function getFeaturedVehicles() {
     slug: v.slug,
     status: v.status,
     featured: v.featured,
+    badges: v.badges || [],
   }));
 }
 
