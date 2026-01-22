@@ -78,6 +78,7 @@ async function getFeaturedVehicles() {
 export default async function HomePage() {
   const featuredVehicles = await getFeaturedVehicles();
 
+  // Hero com imagem da Quintanilha Autos
   return (
     <>
       <Hero backgroundImage="https://lh3.googleusercontent.com/p/AF1QipO3uCH2zCnNsfmofUIBZNN3Fm966iTGtHCW9K28=s1360-w1360-h1020-rw" />
