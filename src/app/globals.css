@@ -8,17 +8,17 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca - Laranja #f97316 */
-    --primary: 25 95% 53%;
+    /* Cor principal da marca - Verde #3ab455 */
+    --primary: 136 51% 47%;
     --primary-foreground: 0 0% 100%;
 
-    /* Cor secundária (CTAs, destaques) - Cinza escuro */
-    --secondary: 220 13% 26%;
+    /* Cor secundária (CTAs, destaques) - Verde mais escuro */
+    --secondary: 136 51% 37%;
     --secondary-foreground: 0 0% 100%;
 
     /* Cor de destaque/accent */
-    --accent: 45 100% 96%;
-    --accent-foreground: 45 100% 25%;
+    --accent: 136 51% 95%;
+    --accent-foreground: 136 51% 25%;
 
     /* ========================================
        CORES BASE (geralmente não mudam)
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 25 95% 53%;
+    --ring: 136 51% 47%;
 
     /* Estados */
     --destructive: 0 84% 60%;
@@ -59,11 +59,11 @@
     --radius: 0.5rem;
 
     /* Charts (admin dashboard) */
-    --chart-1: 25 95% 53%;
-    --chart-2: 220 13% 26%;
-    --chart-3: 38 92% 50%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 136 51% 47%;
+    --chart-2: 136 51% 37%;
+    --chart-3: 136 51% 57%;
+    --chart-4: 136 51% 67%;
+    --chart-5: 136 51% 77%;
   }
 
   .dark {

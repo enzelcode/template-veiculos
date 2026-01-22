@@ -5,25 +5,25 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Podiumm',
-  slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em São José dos Campos com os melhores preços e condições de pagamento.',
+  name: 'Quintanilha Autos',
+  slogan: 'O melhor atendimento do Vale do Paraíba',
+  description: 'Somos a Quintanilha Autos uma loja de seminovos em Taubaté onde buscamos ter e ser o melhor atendimento do vale do Paraíba! Venha nos visitar e ter a melhor sensação de ser bem atendido',
 
   // Contato
-  phone: '(12) 98222-3508',
-  whatsapp: '5512982223508',
-  whatsapp2: '5512974094296',
+  phone: '(12) 99196-3769',
+  whatsapp: '5512991963769',
+  whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'Av. Guadalupe',
-    number: '490',
-    neighborhood: 'Jardim America',
-    city: 'São José dos Campos',
+    street: 'R. Noruega',
+    number: '112',
+    neighborhood: 'Jardim das Nações',
+    city: 'Taubaté',
     state: 'SP',
-    zipCode: '12235-000',
-    full: 'Av. Guadalupe, 490 - Jardim America, São José dos Campos/SP',
+    zipCode: '12030-207',
+    full: 'R. Noruega, 112 - Jardim das Nações, Taubaté - SP, 12030-207',
   },
 
   // Horário de funcionamento
@@ -36,7 +36,7 @@ export const SITE_CONFIG = {
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/podiummveiculos/',
+    instagram: 'https://www.instagram.com/quintanilha_autos/',
     facebook: '',
     youtube: '',
     tiktok: '',
