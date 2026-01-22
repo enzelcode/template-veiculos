@@ -88,8 +88,8 @@ function SearchBarComponent({
     <div ref={containerRef} className={`relative ${className}`}>
       <form onSubmit={handleSubmit}>
         <Search
-          className={`absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground z-10 ${
-            variant === 'minimal' ? 'h-4 w-4' : 'h-5 w-5'
+          className={`absolute left-3 top-1/2 -translate-y-1/2 z-10 ${
+            variant === 'minimal' ? 'h-4 w-4 text-muted-foreground' : 'h-5 w-5 text-zinc-500'
           }`}
         />
         <Input
@@ -102,7 +102,7 @@ function SearchBarComponent({
           className={`
             pl-10
             ${variant === 'default'
-              ? 'h-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40 focus:ring-white/40'
+              ? 'h-11 bg-white border-0 text-zinc-900 placeholder:text-zinc-500 focus:ring-2 focus:ring-white/40 shadow-md'
               : 'h-9 bg-white border-zinc-200'
             }
           `}
