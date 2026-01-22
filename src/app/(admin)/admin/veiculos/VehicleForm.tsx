@@ -44,6 +44,7 @@ interface VehicleFormData {
   featuredImage: string;
   images: string[];
   features: string[];
+  badges: string[];
   description: string;
   status: string;
   featured: boolean;
@@ -78,6 +79,7 @@ export function VehicleForm({ initialData }: VehicleFormProps) {
     featuredImage: initialData?.featuredImage || '',
     images: initialData?.images || [],
     features: initialData?.features || [],
+    badges: initialData?.badges || [],
     description: initialData?.description || '',
     status: initialData?.status || 'available',
     featured: initialData?.featured || false,
@@ -96,6 +98,25 @@ export function VehicleForm({ initialData }: VehicleFormProps) {
       features: prev.features.includes(feature)
         ? prev.features.filter((f) => f !== feature)
         : [...prev.features, feature],
+    }));
+  };
+
+  const [newBadge, setNewBadge] = useState('');
+
+  const addBadge = () => {
+    if (newBadge.trim() && !formData.badges.includes(newBadge.trim())) {
+      setFormData((prev) => ({
+        ...prev,
+        badges: [...prev.badges, newBadge.trim()],
+      }));
+      setNewBadge('');
+    }
+  };
+
+  const removeBadge = (badge: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      badges: prev.badges.filter((b) => b !== badge),
     }));
   };
 
@@ -383,6 +404,50 @@ export function VehicleForm({ initialData }: VehicleFormProps) {
               </div>
             ))}
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Badges Personalizadas */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Badges de Destaque</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex gap-2">
+            <Input
+              placeholder="Ex: IPVA 2026 PAGO, ENTRADA FACILITADA"
+              value={newBadge}
+              onChange={(e) => setNewBadge(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  addBadge();
+                }
+              }}
+            />
+            <Button type="button" onClick={addBadge} variant="outline">
+              Adicionar
+            </Button>
+          </div>
+          {formData.badges.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {formData.badges.map((badge) => (
+                <div
+                  key={badge}
+                  className="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                >
+                  <span>{badge}</span>
+                  <button
+                    type="button"
+                    onClick={() => removeBadge(badge)}
+                    className="text-green-600 hover:text-green-800"
+                  >
+                    ×
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
         </CardContent>
       </Card>
 

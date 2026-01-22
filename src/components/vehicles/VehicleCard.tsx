@@ -42,6 +42,19 @@ function VehicleCardComponent({ vehicle }: VehicleCardProps) {
             <Badge className="absolute top-3 left-3 bg-primary shadow-lg">Destaque</Badge>
           )}
 
+          {vehicle.badges && vehicle.badges.length > 0 && (
+            <div className="absolute top-3 right-3 flex flex-col gap-2 items-end">
+              {vehicle.badges.map((badge, index) => (
+                <Badge
+                  key={index}
+                  className="bg-green-600 hover:bg-green-700 text-white shadow-lg text-xs font-semibold"
+                >
+                  {badge}
+                </Badge>
+              ))}
+            </div>
+          )}
+
           {vehicle.status === 'sold' && (
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
               <Badge variant="destructive" className="text-lg px-4 py-1">Vendido</Badge>

@@ -25,6 +25,7 @@ export interface IVehicle {
   images: string[];
   featuredImage: string;
   features: string[];
+  badges: string[];
   description: string;
   status: VehicleStatus;
   featured: boolean;
@@ -108,6 +109,10 @@ const VehicleSchema = new Schema<IVehicle>(
       default: '',
     },
     features: {
+      type: [String],
+      default: [],
+    },
+    badges: {
       type: [String],
       default: [],
     },

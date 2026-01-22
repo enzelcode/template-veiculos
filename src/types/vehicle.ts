@@ -37,6 +37,7 @@ export interface Vehicle {
 
   // Extras
   features: string[];
+  badges: string[];
   description: string;
 
   // Controle
@@ -81,6 +82,7 @@ export type VehicleCard = Pick<
   | 'featuredImage'
   | 'status'
   | 'featured'
+  | 'badges'
 >;
 
 /**
