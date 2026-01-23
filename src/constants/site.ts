@@ -5,25 +5,25 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Quintanilha Autos',
-  slogan: 'O melhor atendimento do Vale do Paraíba',
-  description: 'Somos a Quintanilha Autos uma loja de seminovos em Taubaté onde buscamos ter e ser o melhor atendimento do vale do Paraíba! Venha nos visitar e ter a melhor sensação de ser bem atendido',
+  name: 'Lucas Motors',
+  slogan: 'Desde 2016 | Nacionais | Importados | Blindados | 0km',
+  description: 'Lucas Motors - Showroom em São José dos Campos. Nacionais, Importados, Blindados e 0km. Atendimento com horário agendado.',
 
   // Contato
-  phone: '(12) 99196-3769',
-  whatsapp: '5512991963769',
+  phone: '(12) 98133-3804',
+  whatsapp: '5512981333804',
   whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'R. Noruega',
-    number: '112',
-    neighborhood: 'Jardim das Nações',
-    city: 'Taubaté',
+    street: 'R. Antônio Joaquim de Alvarenga',
+    number: '251',
+    neighborhood: 'Jardim Satélite',
+    city: 'São José dos Campos',
     state: 'SP',
-    zipCode: '12030-207',
-    full: 'R. Noruega, 112 - Jardim das Nações, Taubaté - SP, 12030-207',
+    zipCode: '12231-670',
+    full: 'R. Antônio Joaquim de Alvarenga, 251 - Jardim Satélite, São José dos Campos - SP, 12231-670',
   },
 
   // Horário de funcionamento
@@ -36,7 +36,7 @@ export const SITE_CONFIG = {
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/quintanilha_autos/',
+    instagram: 'https://www.instagram.com/lucasmotorssp/',
     facebook: '',
     youtube: '',
     tiktok: '',

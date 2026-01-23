@@ -2,7 +2,6 @@
 
 import { useState, useMemo, useCallback, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Image from 'next/image';
 import { Loader2 } from 'lucide-react';
 import { VehicleCard, VehicleFilters, FilterState } from '@/components/vehicles';
 import type { VehicleCard as VehicleCardType } from '@/types/vehicle';
@@ -121,12 +120,7 @@ function VehiclesContent() {
     <div>
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipO3uCH2zCnNsfmofUIBZNN3Fm966iTGtHCW9K28=s1360-w1360-h1020-rw"
-            alt=""
-            fill
-            className="object-cover"
-          />
+          <img src="/default.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Nossos Veículos</h1>

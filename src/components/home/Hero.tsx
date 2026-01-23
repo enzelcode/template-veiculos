@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Nosso propósito é a realização do seu sonho`,
-  subtitle = `Referência em veículos de qualidade e atendimento personalizado.`,
+  title = `Nacionais | Importados | Blindados | 0km`,
+  subtitle = `Desde 2016 • Showroom em São José dos Campos • Atendimento com horário agendado`,
   backgroundImage,
 }: HeroProps) {
   return (
@@ -28,8 +28,8 @@ function HeroComponent({
       )}
 
       <div className="container-custom relative z-10 flex justify-center">
-        <div className="max-w-2xl text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        <div className="max-w-6xl text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 uppercase tracking-wide">
             {title}
           </h1>
           <p className="text-lg md:text-xl text-zinc-300 mb-8">

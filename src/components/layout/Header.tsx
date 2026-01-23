@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 
 function HeaderComponent() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#3ab455] border-b border-[#2d8f42]">
+    <header className="sticky top-0 z-50 w-full bg-[#ed003b] border-b border-[#c00030]">
       <div className="container-custom">
         <div className="flex h-24 items-center justify-between gap-4">
           <Link
@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/quintanilha.png"
-              alt="Quintanilha Autos"
+              src="/lucas.png"
+              alt="Lucas Motors"
               width={160}
               height={80}
               className="h-16 w-auto object-contain"
