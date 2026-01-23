@@ -87,7 +87,11 @@ export default async function HomePage() {
 
   return (
     <>
-      <Hero backgroundImage="https://lh3.googleusercontent.com/p/AF1QipP2SDxl_08UjYoHlLbsGcUSwVMrGOgrKq3HJfw-=s1360-w1360-h1020-rw" />
+      <Hero
+        backgroundImage="/herod.webp"
+        backgroundImageMobile="/herom.webp"
+        showText={false}
+      />
 
       <section className="container-custom py-16">
         <AnimateOnScroll animation="fadeUp">
