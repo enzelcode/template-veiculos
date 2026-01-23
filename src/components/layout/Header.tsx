@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 
 function HeaderComponent() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-zinc-900 border-b border-zinc-800">
+    <header className="sticky top-0 z-50 w-full bg-[#020202] border-b border-zinc-800">
       <div className="container-custom">
         <div className="flex h-24 items-center justify-between gap-4">
           <Link
@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/podiumm.png"
-              alt="Podiumm"
+              src="/style.png"
+              alt="StyleCars"
               width={160}
               height={80}
               className="h-16 w-auto object-contain"

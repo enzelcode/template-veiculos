@@ -26,10 +26,10 @@ const contactInfo = [
 export default function ContatoPage() {
   return (
     <div>
-      <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
+      <section className="relative bg-[#020202] text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipN9xW4IBy1sCsv2H0Ju07Mq5cbc1o4WTTmp8FbG=s1360-w1360-h1020-rw"
+            src="/herost.webp"
             alt=""
             fill
             className="object-cover"

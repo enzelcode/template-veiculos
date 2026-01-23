@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { WhatsAppButton } from '@/components/shared';
 
@@ -15,13 +16,16 @@ function HeroComponent({
   backgroundImage,
 }: HeroProps) {
   return (
-    <section className="relative min-h-[500px] lg:min-h-[600px] flex items-center">
+    <section className="relative min-h-[500px] lg:min-h-[600px] flex items-center bg-[#020202]">
       {backgroundImage ? (
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 opacity-30">
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            className="object-cover object-top"
+            priority
+          />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-zinc-800" />

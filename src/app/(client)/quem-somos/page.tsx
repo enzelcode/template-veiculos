@@ -1,32 +1,32 @@
 import Image from 'next/image';
-import { CheckCircle, Users, Car, ThumbsUp, Shield } from 'lucide-react';
+import { CheckCircle, Megaphone, UserCheck, Handshake, Car, Shield, Clock } from 'lucide-react';
 import { ContactCTA } from '@/components/home';
 import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const diferenciais = [
-  { icon: Users, label: 'Atendimento personalizado' },
-  { icon: Car, label: 'Veículos de qualidade' },
-  { icon: ThumbsUp, label: 'Realizamos seu sonho' },
-  { icon: Shield, label: 'Procedência garantida' },
+  { icon: Megaphone, label: 'Divulgação profissional' },
+  { icon: UserCheck, label: 'Filtragem de interessados' },
+  { icon: Handshake, label: 'Negociação completa' },
+  { icon: Car, label: 'Carro fica com você' },
 ];
 
 const values = [
-  'Atendimento personalizado e exclusivo',
-  'Veículos revisados e com procedência',
-  'Compromisso com a realização do seu sonho',
-  'Facilidade no financiamento',
-  'Qualidade acima de tudo',
-  'Preços justos e competitivos',
+  'Você não precisa deixar o carro conosco',
+  'Divulgação em todas as plataformas',
+  'Filtramos curiosos e só passamos interessados reais',
+  'Cuidamos de toda a negociação por você',
+  'Processo seguro e transparente',
+  'Zero dor de cabeça na venda',
 ];
 
 export default function QuemSomosPage() {
   return (
     <div>
-      <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
+      <section className="relative bg-[#020202] text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipN9xW4IBy1sCsv2H0Ju07Mq5cbc1o4WTTmp8FbG=s1360-w1360-h1020-rw"
+            src="/herost.webp"
             alt=""
             fill
             className="object-cover"
@@ -35,7 +35,7 @@ export default function QuemSomosPage() {
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Quem Somos</h1>
           <p className="text-zinc-300 text-lg max-w-2xl">
-            Conheça a história e os valores da {SITE_CONFIG.name}
+            Conheça a {SITE_CONFIG.name} e nossa forma diferente de vender veículos
           </p>
         </div>
       </section>
@@ -45,12 +45,13 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateOnScroll animation="slideLeft">
               <div className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-[#020202] flex items-center justify-center p-8">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipNAEMeOV96t6NktRTrSRlENUH5pdl5DHe-u_TLC=s1360-w1360-h1020-rw"
-                    alt="Showroom de veículos"
-                    fill
-                    className="object-cover"
+                    src="/style.png"
+                    alt="StyleCars"
+                    width={400}
+                    height={200}
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -62,21 +63,22 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Realizando sonhos sobre rodas
+                  Consignação de veículos do jeito certo
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    com um propósito claro: realizar o seu sonho de ter o carro ideal.
-                    Somos referência em veículos de qualidade e atendimento personalizado.
+                    para resolver um problema: vender seu carro sem dor de cabeça.
+                    Sabemos que anunciar, filtrar curiosos e negociar toma tempo e energia.
                   </p>
                   <p>
-                    Nossa equipe é formada por profissionais dedicados a entender suas necessidades
-                    e encontrar o veículo perfeito para você. Atendimento exclusivo do início ao fim.
+                    Por isso, criamos um modelo de consignação onde <strong className="text-foreground">você não precisa
+                    deixar o veículo conosco</strong>. Fazemos toda a divulgação profissional,
+                    filtramos os interessados reais e cuidamos da negociação.
                   </p>
                   <p>
-                    Todos os nossos veículos passam por rigorosa inspeção antes de serem
-                    disponibilizados. Qualidade e procedência garantidas.
+                    Você só apresenta o carro quando houver um comprador de verdade.
+                    Mais segurança, mais conforto e <strong className="text-foreground">zero dor de cabeça</strong>.
                   </p>
                 </div>
               </div>
@@ -85,7 +87,7 @@ export default function QuemSomosPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-zinc-900 text-white">
+      <section className="py-16 bg-[#020202] text-white">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {diferenciais.map(({ icon: Icon, label }, index) => (
@@ -111,7 +113,7 @@ export default function QuemSomosPage() {
                   Por que nos escolher
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-8">
-                  Nossos Valores
+                  Nossos Diferenciais
                 </h2>
                 <div className="space-y-4">
                   {values.map((value, index) => (
@@ -129,13 +131,46 @@ export default function QuemSomosPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="slideRight" delay={200}>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipOs0FkItas1uhM6hPu0KgsGkZEyAgcfZFvhQVDQ=s1360-w1360-h1020-rw"
-                  alt="Por que nos escolher"
-                  fill
-                  className="object-cover"
-                />
+              <div className="bg-zinc-50 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-6">Como funciona?</h3>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Entre em contato</h4>
+                      <p className="text-sm text-muted-foreground">Fale conosco pelo WhatsApp com as informações do seu veículo.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Avaliação e fotos</h4>
+                      <p className="text-sm text-muted-foreground">Avaliamos seu veículo e fazemos fotos profissionais.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Divulgação</h4>
+                      <p className="text-sm text-muted-foreground">Anunciamos em todas as plataformas e filtramos interessados.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                      4
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Venda realizada</h4>
+                      <p className="text-sm text-muted-foreground">Você só apresenta o carro quando houver interesse real.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </AnimateOnScroll>
           </div>

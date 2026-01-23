@@ -5,25 +5,25 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Podiumm',
-  slogan: 'Seu próximo carro começa aqui',
-  description: 'Loja de veículos seminovos em São José dos Campos com os melhores preços e condições de pagamento.',
+  name: 'StyleCars',
+  slogan: 'Venda seu carro com segurança e zero dor de cabeça',
+  description: 'Consignação de veículos com divulgação profissional, filtragem de interessados reais e negociação completa. Você só apresenta o carro quando houver interesse.',
 
   // Contato
-  phone: '(12) 98222-3508',
-  whatsapp: '5512982223508',
-  whatsapp2: '5512974094296',
+  phone: '(00) 99999-9999',
+  whatsapp: '5500999999999',
+  whatsapp2: '',
   email: '',
 
   // Endereço
   address: {
-    street: 'Av. Guadalupe',
-    number: '490',
-    neighborhood: 'Jardim America',
-    city: 'São José dos Campos',
-    state: 'SP',
-    zipCode: '12235-000',
-    full: 'Av. Guadalupe, 490 - Jardim America, São José dos Campos/SP',
+    street: 'Endereço aqui',
+    number: '',
+    neighborhood: '',
+    city: '',
+    state: '',
+    zipCode: '',
+    full: 'Endereço aqui',
   },
 
   // Horário de funcionamento
@@ -36,7 +36,7 @@ export const SITE_CONFIG = {
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/podiummveiculos/',
+    instagram: 'https://www.instagram.com/stylecars__/',
     facebook: '',
     youtube: '',
     tiktok: '',
@@ -47,7 +47,7 @@ export const SITE_CONFIG = {
     main: [
       { label: 'Início', href: '/' },
       { label: 'Veículos', href: '/veiculos' },
-      { label: 'Simule Agora', href: '/simule' },
+      { label: 'Venda seu Veículo', href: '/venda-seu-veiculo' },
       { label: 'Quem Somos', href: '/quem-somos' },
       { label: 'Contato', href: '/contato' },
     ],
