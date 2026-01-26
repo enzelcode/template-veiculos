@@ -6,7 +6,7 @@ import { SITE_CONFIG } from '@/constants/site';
 
 const diferenciais = [
   { icon: Users, label: 'Atendimento personalizado' },
-  { icon: Car, label: 'Veículos de qualidade' },
+  { icon: Car, label: 'Seminovos selecionados' },
   { icon: ThumbsUp, label: 'Realizamos seu sonho' },
   { icon: Shield, label: 'Procedência garantida' },
 ];
@@ -24,14 +24,7 @@ export default function QuemSomosPage() {
   return (
     <div>
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipN9xW4IBy1sCsv2H0Ju07Mq5cbc1o4WTTmp8FbG=s1360-w1360-h1020-rw"
-            alt=""
-            fill
-            className="object-cover"
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-zinc-900" />
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Quem Somos</h1>
           <p className="text-zinc-300 text-lg max-w-2xl">
@@ -45,12 +38,13 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateOnScroll animation="slideLeft">
               <div className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-zinc-900 flex items-center justify-center p-8">
                   <Image
-                    src="https://lh3.googleusercontent.com/p/AF1QipNAEMeOV96t6NktRTrSRlENUH5pdl5DHe-u_TLC=s1360-w1360-h1020-rw"
-                    alt="Showroom de veículos"
-                    fill
-                    className="object-cover"
+                    src="/fg.png"
+                    alt="FG Prime Motors"
+                    width={400}
+                    height={200}
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -62,20 +56,20 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Realizando sonhos sobre rodas
+                  Seminovos selecionados com atendimento personalizado
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    com um propósito claro: realizar o seu sonho de ter o carro ideal.
-                    Somos referência em veículos de qualidade e atendimento personalizado.
+                    com um propósito claro: oferecer os melhores seminovos com atendimento
+                    personalizado em Campo Grande/MS.
                   </p>
                   <p>
                     Nossa equipe é formada por profissionais dedicados a entender suas necessidades
                     e encontrar o veículo perfeito para você. Atendimento exclusivo do início ao fim.
                   </p>
                   <p>
-                    Todos os nossos veículos passam por rigorosa inspeção antes de serem
+                    Todos os nossos veículos passam por rigorosa seleção antes de serem
                     disponibilizados. Qualidade e procedência garantidas.
                   </p>
                 </div>
@@ -129,13 +123,11 @@ export default function QuemSomosPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="slideRight" delay={200}>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="https://lh3.googleusercontent.com/p/AF1QipOs0FkItas1uhM6hPu0KgsGkZEyAgcfZFvhQVDQ=s1360-w1360-h1020-rw"
-                  alt="Por que nos escolher"
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/20 to-zinc-900 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Car className="h-24 w-24 text-primary mx-auto mb-4" />
+                  <p className="text-2xl font-bold text-zinc-800">Qualidade e Procedência</p>
+                </div>
               </div>
             </AnimateOnScroll>
           </div>

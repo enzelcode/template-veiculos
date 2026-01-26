@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `Nosso propósito é a realização do seu sonho`,
-  subtitle = `Referência em veículos de qualidade e atendimento personalizado.`,
+  title = `SEMINOVOS SELECIONADOS`,
+  subtitle = `Atendimento personalizado em Campo Grande/MS`,
   backgroundImage,
 }: HeroProps) {
   return (

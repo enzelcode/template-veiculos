@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { FinancingForm } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
@@ -42,14 +41,7 @@ export default function SimulePage() {
     <div>
       {/* Hero */}
       <section className="relative bg-zinc-900 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <Image
-            src="https://lh3.googleusercontent.com/p/AF1QipN9xW4IBy1sCsv2H0Ju07Mq5cbc1o4WTTmp8FbG=s1360-w1360-h1020-rw"
-            alt=""
-            fill
-            className="object-cover"
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-zinc-900" />
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Simule seu Financiamento</h1>
           <p className="text-zinc-300 text-lg max-w-2xl">

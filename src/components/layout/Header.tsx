@@ -17,8 +17,8 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/podiumm.png"
-              alt="Podiumm"
+              src="/fg.png"
+              alt="FG Prime Motors"
               width={160}
               height={80}
               className="h-16 w-auto object-contain"
