@@ -1,19 +1,19 @@
 import Image from 'next/image';
-import { CheckCircle, Users, Award, Shield, Car } from 'lucide-react';
+import { CheckCircle, Users, Award, Shield, Car, MapPin } from 'lucide-react';
 import { ContactCTA } from '@/components/home';
 import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const stats = [
   { icon: Users, value: '1.000+', label: 'Clientes satisfeitos' },
-  { icon: Award, value: '5+', label: 'Anos no mercado' },
-  { icon: Car, value: '500+', label: 'Veículos vendidos' },
+  { icon: Award, value: '18', label: 'Anos no mercado' },
+  { icon: MapPin, value: '18', label: 'Anos no mesmo local' },
   { icon: Shield, value: '100%', label: 'Procedência garantida' },
 ];
 
 const values = [
   'Transparência em todas as negociações',
-  'Veículos revisados e com procedência',
+  'Veículos revisados e com procedência garantida',
   'Atendimento personalizado',
   'Facilidade no financiamento',
   'Aceitamos veículo na troca',
@@ -38,17 +38,18 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateOnScroll animation="slideLeft">
               <div className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black flex items-center justify-center p-8">
                   <Image
-                    src="/heromateus.png"
-                    alt="Mateus Veículos"
-                    fill
-                    className="object-cover"
+                    src="/maverick.png"
+                    alt="Maverick Veículos"
+                    width={400}
+                    height={200}
+                    className="object-contain"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl hidden md:block">
-                  <p className="text-4xl font-bold">2020</p>
+                <div className="absolute -bottom-6 -right-6 bg-primary text-black p-6 rounded-2xl shadow-xl hidden md:block">
                   <p className="text-sm">Desde</p>
+                  <p className="text-4xl font-bold">2008</p>
                 </div>
               </div>
             </AnimateOnScroll>
@@ -59,21 +60,21 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Desde 2020 realizando sonhos!
+                  18 anos construindo confiança!
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    em 2020 com o propósito de realizar o sonho de muitas pessoas: ter o veículo
-                    ideal. Desde então, trabalhamos com dedicação e transparência em Imperatriz/MA.
+                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> está no mercado
+                    desde 2008, há 18 anos no mesmo local construindo relacionamento de confiança
+                    com nossos clientes em Niterói/RJ e região.
                   </p>
                   <p>
-                    Trabalhamos com compra, venda, troca e financiamento de carros e motos,
+                    Trabalhamos com compra, venda, troca e financiamento de veículos,
                     sempre oferecendo atendimento personalizado e as melhores condições do mercado.
                   </p>
                   <p>
-                    Todos os nossos veículos passam por rigorosa inspeção antes de serem
-                    disponibilizados para venda. Qualidade e procedência garantidas!
+                    Todos os nossos veículos são de qualidade e com procedência garantida.
+                    Nossa prioridade é a satisfação e segurança dos nossos clientes!
                   </p>
                 </div>
               </div>
@@ -127,10 +128,10 @@ export default function QuemSomosPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="slideRight" delay={200}>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-zinc-200">
                 <Image
-                  src="/msn.png"
-                  alt="Mateus Veículos"
+                  src="/quem-somos-2.jpg"
+                  alt="Maverick Veículos"
                   fill
                   className="object-cover"
                 />

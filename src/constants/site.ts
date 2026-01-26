@@ -5,37 +5,37 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Mateus Veículos',
-  slogan: 'Desde 2020 realizando sonhos!',
-  description: 'Mateus Veículos - Compra, venda, troca e financiamento de veículos em Imperatriz/MA. Desde 2020 realizando sonhos!',
+  name: 'Maverick Veículos',
+  slogan: 'Seu próximo veículo está aqui!',
+  description: 'Maverick Veículos - Compra, venda, troca e financiamento de veículos em Niterói/RJ. Atendemos São Gonçalo e região!',
 
   // Contato
-  phone: '(99) 99191-2802',
-  whatsapp: '5599991912802',
+  phone: '(21) 96564-3030',
+  whatsapp: '5521965643030',
   email: '',
 
   // Endereço
   address: {
-    street: 'Rua Osvaldo Cruz',
-    number: '736',
-    neighborhood: 'Bacuri',
-    city: 'Imperatriz',
-    state: 'MA',
-    zipCode: '65900-000',
-    full: 'Rua Osvaldo Cruz, 736 - Bacuri, Imperatriz/MA',
+    street: 'Rua Benjamin Constant',
+    number: '279',
+    neighborhood: 'Barreto',
+    city: 'Niterói',
+    state: 'RJ',
+    zipCode: '24110-002',
+    full: 'R. Benjamin Constant, 279 - Barreto, Niterói/RJ',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '08:00 às 18:00',
+    weekdays: '08:00 às 17:00',
     saturday: '08:00 às 12:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 08h-18h | Sáb: 08h-12h',
+    formatted: 'Seg-Sex: 08h-17h | Sáb: 08h-12h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/mateus.veiculos.itz/',
+    instagram: 'https://www.instagram.com/maverickveiculos/',
     facebook: '',
     youtube: '',
     tiktok: '',

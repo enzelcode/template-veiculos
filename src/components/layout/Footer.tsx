@@ -9,18 +9,18 @@ function FooterComponent() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-zinc-900 text-zinc-300">
+    <footer className="bg-black text-zinc-300">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/mateus.png"
-              alt="Mateus Veículos"
+              src="/maverick.png"
+              alt="Maverick Veículos"
               width={150}
               height={80}
               className="h-16 w-auto object-contain mb-4"
             />
-            <p className="text-sm text-zinc-400 mb-4">Compra, venda, troca e financiamento de veículos. Desde 2020 realizando sonhos!</p>
+            <p className="text-sm text-zinc-400 mb-4">Compra, venda, troca e financiamento de veículos em Niterói/RJ. Atendemos São Gonçalo e região!</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a

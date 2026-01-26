@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `DESDE 2020 REALIZANDO SONHOS!`,
-  subtitle = `Compra, venda, troca e financiamento de veículos em Imperatriz/MA`,
+  title = `18 ANOS CONSTRUINDO CONFIANÇA!`,
+  subtitle = `Compra, venda, troca e financiamento de veículos em Niterói/RJ`,
   backgroundImage,
 }: HeroProps) {
   return (

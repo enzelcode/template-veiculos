@@ -176,7 +176,7 @@ export function FinancingForm({ vehicle, vehicles }: FinancingFormProps) {
               name="whatsapp"
               value={formData.whatsapp}
               onChange={handleChange}
-              placeholder="(12) 99999-9999"
+              placeholder="(21) 99999-9999"
               required
               className={inputClass}
             />
