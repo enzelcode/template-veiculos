@@ -5,24 +5,24 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'FG Prime Motors',
-  slogan: 'Seminovos selecionados com atendimento personalizado',
-  description: 'FG Prime Motors - Seminovos selecionados em Campo Grande/MS. Atendimento personalizado e as melhores condições.',
+  name: 'Mateus Veículos',
+  slogan: 'Desde 2020 realizando sonhos!',
+  description: 'Mateus Veículos - Compra, venda, troca e financiamento de veículos em Imperatriz/MA. Desde 2020 realizando sonhos!',
 
   // Contato
-  phone: '(67) 99999-9999',
-  whatsapp: '5567999999999',
+  phone: '(99) 99191-2802',
+  whatsapp: '5599991912802',
   email: '',
 
   // Endereço
   address: {
-    street: 'Av. Afonso Pena',
-    number: '1000',
-    neighborhood: 'Centro',
-    city: 'Campo Grande',
-    state: 'MS',
-    zipCode: '79000-000',
-    full: 'Av. Afonso Pena, 1000 - Centro, Campo Grande/MS',
+    street: 'Rua Osvaldo Cruz',
+    number: '736',
+    neighborhood: 'Bacuri',
+    city: 'Imperatriz',
+    state: 'MA',
+    zipCode: '65900-000',
+    full: 'Rua Osvaldo Cruz, 736 - Bacuri, Imperatriz/MA',
   },
 
   // Horário de funcionamento
@@ -35,7 +35,7 @@ export const SITE_CONFIG = {
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/fg_primemotors/',
+    instagram: 'https://www.instagram.com/mateus.veiculos.itz/',
     facebook: '',
     youtube: '',
     tiktok: '',
@@ -46,7 +46,8 @@ export const SITE_CONFIG = {
     main: [
       { label: 'Início', href: '/' },
       { label: 'Veículos', href: '/veiculos' },
-      { label: 'Venda seu Carro', href: '/venda-seu-carro' },
+      { label: 'Financiamento', href: '/simule' },
+      { label: 'Venda seu Veículo', href: '/venda-seu-carro' },
       { label: 'Quem Somos', href: '/quem-somos' },
       { label: 'Contato', href: '/contato' },
     ],

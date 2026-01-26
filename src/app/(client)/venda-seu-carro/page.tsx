@@ -177,7 +177,7 @@ export default function VendaSeuCarroPage() {
                     name="whatsapp"
                     value={formData.whatsapp}
                     onChange={handleChange}
-                    placeholder="(67) 99999-9999"
+                    placeholder="(99) 99999-9999"
                     required
                     className={inputClass}
                   />
@@ -195,7 +195,7 @@ export default function VendaSeuCarroPage() {
                       name="marca"
                       value={formData.marca}
                       onChange={handleChange}
-                      placeholder="Ex: Toyota"
+                      placeholder="Ex: Toyota, Honda"
                       required
                       className={inputClass}
                     />
@@ -210,7 +210,7 @@ export default function VendaSeuCarroPage() {
                       name="modelo"
                       value={formData.modelo}
                       onChange={handleChange}
-                      placeholder="Ex: Corolla XEi"
+                      placeholder="Ex: Corolla XEi, CG 160"
                       required
                       className={inputClass}
                     />

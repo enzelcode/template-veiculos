@@ -17,11 +17,11 @@ function HeaderComponent() {
             className="flex-shrink-0"
           >
             <Image
-              src="/fg.png"
-              alt="FG Prime Motors"
+              src="/mateus.png"
+              alt="Mateus Veículos"
               width={160}
               height={80}
-              className="h-16 w-auto object-contain"
+              className="h-14 w-auto object-contain"
               priority
             />
           </Link>

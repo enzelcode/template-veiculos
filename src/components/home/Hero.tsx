@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `SEMINOVOS SELECIONADOS`,
-  subtitle = `Atendimento personalizado em Campo Grande/MS`,
+  title = `DESDE 2020 REALIZANDO SONHOS!`,
+  subtitle = `Compra, venda, troca e financiamento de veículos em Imperatriz/MA`,
   backgroundImage,
 }: HeroProps) {
   return (

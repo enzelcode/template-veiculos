@@ -8,8 +8,8 @@
        CORES DO TEMA - CUSTOMIZAR POR CLIENTE
        ======================================== */
 
-    /* Cor principal da marca - Azul #2563eb */
-    --primary: 217 91% 53%;
+    /* Cor principal da marca - Vermelho #dc2626 */
+    --primary: 0 84% 50%;
     --primary-foreground: 0 0% 100%;
 
     /* Cor secundária (CTAs, destaques) - Cinza escuro */
@@ -17,8 +17,8 @@
     --secondary-foreground: 0 0% 100%;
 
     /* Cor de destaque/accent */
-    --accent: 217 91% 95%;
-    --accent-foreground: 217 91% 25%;
+    --accent: 0 84% 95%;
+    --accent-foreground: 0 84% 25%;
 
     /* ========================================
        CORES BASE (geralmente não mudam)
@@ -43,7 +43,7 @@
     /* Bordas e inputs */
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 217 91% 53%;
+    --ring: 0 84% 50%;
 
     /* Estados */
     --destructive: 0 84% 60%;
