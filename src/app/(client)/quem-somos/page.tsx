@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { CheckCircle, Users, Award, Shield, Car, MapPin } from 'lucide-react';
+import { CheckCircle, Users, Award, Shield, MapPin } from 'lucide-react';
 import { ContactCTA } from '@/components/home';
 import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
