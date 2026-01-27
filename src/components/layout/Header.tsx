@@ -11,17 +11,17 @@ function HeaderComponent() {
   return (
     <header className="sticky top-0 z-50 w-full bg-black border-b border-zinc-800">
       <div className="container-custom">
-        <div className="flex h-24 items-center justify-between gap-4">
+        <div className="flex h-20 items-center justify-between gap-4">
           <Link
             href="/"
             className="flex-shrink-0"
           >
             <Image
-              src="/wrveiculos.png"
-              alt="WR Veículos"
-              width={280}
-              height={140}
-              className="h-24 w-auto object-contain"
+              src="/alfa.png"
+              alt="Alfa Veículos"
+              width={200}
+              height={100}
+              className="h-16 w-auto object-contain"
               priority
             />
           </Link>

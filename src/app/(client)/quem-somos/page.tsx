@@ -6,18 +6,18 @@ import { SITE_CONFIG } from '@/constants/site';
 
 const stats = [
   { icon: Users, label: 'Clientes satisfeitos' },
-  { icon: Award, label: 'Experiência no mercado' },
+  { icon: Award, label: 'Mais de 20 anos' },
   { icon: Car, label: 'Variedade de veículos' },
-  { icon: Shield, label: 'Procedência garantida' },
+  { icon: Shield, label: 'Garantia e procedência' },
 ];
 
 const values = [
   'Transparência em todas as negociações',
-  'Veículos revisados e com procedência',
+  'Veículos com garantia e procedência',
   'Atendimento personalizado',
   'Facilidade no financiamento',
   'Aceitamos veículo na troca',
-  'Preços justos e competitivos',
+  'Trabalhamos com consignação',
 ];
 
 export default function QuemSomosPage() {
@@ -38,13 +38,12 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateOnScroll animation="slideLeft">
               <div className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black flex items-center justify-center p-6">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/wrveiculos.png"
-                    alt="WR Veículos"
-                    width={600}
-                    height={300}
-                    className="object-contain w-full"
+                    src="/hero-alfa.jpg"
+                    alt="Alfa Veículos"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -56,21 +55,21 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Tradição e confiança em Poços de Caldas!
+                  Mais de 20 anos de tradição em Poços de Caldas!
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
-                    com o propósito de oferecer os melhores veículos seminovos da região.
+                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> está há mais de 20 anos
+                    no mercado, oferecendo os melhores veículos com garantia e procedência.
                     Trabalhamos com dedicação e transparência em Poços de Caldas/MG.
                   </p>
                   <p>
-                    Trabalhamos com compra, venda, troca e financiamento de veículos,
+                    Atuamos com compra, venda, troca e consignação de veículos,
                     sempre oferecendo atendimento personalizado e as melhores condições do mercado.
                   </p>
                   <p>
                     Todos os nossos veículos passam por rigorosa inspeção antes de serem
-                    disponibilizados para venda. Qualidade e procedência garantidas!
+                    disponibilizados para venda. Qualidade, garantia e procedência são nossas prioridades!
                   </p>
                 </div>
               </div>
@@ -123,10 +122,10 @@ export default function QuemSomosPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="slideRight" delay={200}>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-zinc-900">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/hero-wr.jpg"
-                  alt="WR Veículos"
+                  src="/alfa-2.jpg"
+                  alt="Alfa Veículos"
                   fill
                   className="object-cover"
                 />

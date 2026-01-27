@@ -14,13 +14,13 @@ function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/wrveiculos.png"
-              alt="WR Veículos"
-              width={280}
-              height={140}
-              className="h-24 w-auto object-contain mb-4"
+              src="/alfa.png"
+              alt="Alfa Veículos"
+              width={200}
+              height={100}
+              className="h-16 w-auto object-contain mb-4"
             />
-            <p className="text-sm text-zinc-400 mb-4">Compra, venda, troca e financiamento de veículos em Poços de Caldas/MG. Seu próximo veículo está aqui!</p>
+            <p className="text-sm text-zinc-400 mb-4">Há mais de 20 anos com os melhores veículos, com garantia e procedência. Compra, venda, troca e consignação em Poços de Caldas/MG.</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a

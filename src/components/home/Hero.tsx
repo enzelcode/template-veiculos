@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `SEU PRÓXIMO VEÍCULO ESTÁ AQUI!`,
-  subtitle = `Compra, venda, troca e financiamento de veículos em Poços de Caldas/MG`,
+  title = `HÁ MAIS DE 20 ANOS COM OS MELHORES VEÍCULOS!`,
+  subtitle = `Compra, venda, troca e consignação em Poços de Caldas/MG`,
   backgroundImage,
 }: HeroProps) {
   return (

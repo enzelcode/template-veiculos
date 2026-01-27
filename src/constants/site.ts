@@ -5,24 +5,24 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'WR Veículos',
-  slogan: 'Seu próximo veículo está aqui!',
-  description: 'WR Veículos - Compra, venda, troca e financiamento de veículos em Poços de Caldas/MG.',
+  name: 'Alfa Veículos',
+  slogan: 'Há mais de 20 anos com os melhores veículos',
+  description: 'Alfa Veículos - Compra, venda, troca e consignação de veículos em Poços de Caldas/MG. Há mais de 20 anos com os melhores veículos, com garantia e procedência.',
 
   // Contato
-  phone: '(35) 99237-0414',
-  whatsapp: '5535992370414',
-  email: '',
+  phone: '(35) 98831-9484',
+  whatsapp: '5535988319484',
+  email: 'alfaveiculos@jingleagency.com.br',
 
   // Endereço
   address: {
-    street: 'Av. Santo Antônio',
-    number: '527',
-    neighborhood: 'Jardim Cascatinha',
+    street: 'Rua São Paulo',
+    number: '503',
+    neighborhood: '',
     city: 'Poços de Caldas',
     state: 'MG',
-    zipCode: '37701-036',
-    full: 'Av. Santo Antônio, 527 - Jardim Cascatinha, Poços de Caldas/MG',
+    zipCode: '37701-012',
+    full: 'Rua São Paulo, 503 - Poços de Caldas/MG',
   },
 
   // Horário de funcionamento
@@ -35,8 +35,8 @@ export const SITE_CONFIG = {
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/wrveiculospocos/',
-    facebook: 'https://www.facebook.com/wrveiculospocosc',
+    instagram: 'https://www.instagram.com/alfaveiculospocos/',
+    facebook: 'https://www.facebook.com/alfaveiculospocos',
     youtube: '',
     tiktok: '',
   },
