@@ -11,7 +11,7 @@ interface HeroProps {
 
 function HeroComponent({
   title = `SEU PRÓXIMO VEÍCULO ESTÁ AQUI!`,
-  subtitle = `Compra, venda, troca e financiamento de veículos em Jaguariúna/SP`,
+  subtitle = `Compra, venda, troca e financiamento de veículos em Poços de Caldas/MG`,
   backgroundImage,
 }: HeroProps) {
   return (

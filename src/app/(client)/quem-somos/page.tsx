@@ -38,13 +38,13 @@ export default function QuemSomosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimateOnScroll animation="slideLeft">
               <div className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black flex items-center justify-center p-8">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black flex items-center justify-center p-6">
                   <Image
-                    src="/viajaguar.png"
-                    alt="Via Jaguar"
-                    width={400}
-                    height={200}
-                    className="object-contain"
+                    src="/wrveiculos.png"
+                    alt="WR Veículos"
+                    width={600}
+                    height={300}
+                    className="object-contain w-full"
                   />
                 </div>
               </div>
@@ -56,13 +56,13 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  Tradição e confiança em Jaguariúna!
+                  Tradição e confiança em Poços de Caldas!
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
                     com o propósito de oferecer os melhores veículos seminovos da região.
-                    Trabalhamos com dedicação e transparência em Jaguariúna/SP.
+                    Trabalhamos com dedicação e transparência em Poços de Caldas/MG.
                   </p>
                   <p>
                     Trabalhamos com compra, venda, troca e financiamento de veículos,
@@ -125,8 +125,8 @@ export default function QuemSomosPage() {
             <AnimateOnScroll animation="slideRight" delay={200}>
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-zinc-900">
                 <Image
-                  src="/default.jpg"
-                  alt="Via Jaguar"
+                  src="/hero-wr.jpg"
+                  alt="WR Veículos"
                   fill
                   className="object-cover"
                 />

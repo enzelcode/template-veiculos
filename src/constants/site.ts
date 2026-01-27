@@ -5,38 +5,38 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Via Jaguar',
+  name: 'WR Veículos',
   slogan: 'Seu próximo veículo está aqui!',
-  description: 'Via Jaguar - Compra, venda, troca e financiamento de veículos em Jaguariúna/SP.',
+  description: 'WR Veículos - Compra, venda, troca e financiamento de veículos em Poços de Caldas/MG.',
 
   // Contato
-  phone: '(19) 99553-7005',
-  whatsapp: '5519995537005',
+  phone: '(35) 99237-0414',
+  whatsapp: '5535992370414',
   email: '',
 
   // Endereço
   address: {
-    street: 'Rua Amazonas',
-    number: '950',
-    neighborhood: 'Jardim América',
-    city: 'Jaguariúna',
-    state: 'SP',
-    zipCode: '13912-028',
-    full: 'R. Amazonas, 950 - Jardim América, Jaguariúna/SP',
+    street: 'Av. Santo Antônio',
+    number: '527',
+    neighborhood: 'Jardim Cascatinha',
+    city: 'Poços de Caldas',
+    state: 'MG',
+    zipCode: '37701-036',
+    full: 'Av. Santo Antônio, 527 - Jardim Cascatinha, Poços de Caldas/MG',
   },
 
   // Horário de funcionamento
   businessHours: {
     weekdays: '08:00 às 18:00',
-    saturday: '08:30 às 13:00',
+    saturday: '08:00 às 12:00',
     sunday: 'Fechado',
-    formatted: 'Ter-Sex: 08h-18h | Sáb: 08h30-13h',
+    formatted: 'Seg-Sex: 08h-18h | Sáb: 08h-12h',
   },
 
   // Redes sociais
   social: {
-    instagram: '',
-    facebook: '',
+    instagram: 'https://www.instagram.com/wrveiculospocos/',
+    facebook: 'https://www.facebook.com/wrveiculospocosc',
     youtube: '',
     tiktok: '',
   },

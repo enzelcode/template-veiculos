@@ -177,7 +177,7 @@ export default function VendaSeuCarroPage() {
                     name="whatsapp"
                     value={formData.whatsapp}
                     onChange={handleChange}
-                    placeholder="(19) 99999-9999"
+                    placeholder="(35) 99999-9999"
                     required
                     className={inputClass}
                   />
