@@ -1,19 +1,19 @@
 import Image from 'next/image';
-import { CheckCircle, Users, Award, Shield, MapPin } from 'lucide-react';
+import { CheckCircle, Users, Award, Shield, Car } from 'lucide-react';
 import { ContactCTA } from '@/components/home';
 import { AnimateOnScroll } from '@/components/shared';
 import { SITE_CONFIG } from '@/constants/site';
 
 const stats = [
-  { icon: Users, value: '1.000+', label: 'Clientes satisfeitos' },
-  { icon: Award, value: '18', label: 'Anos no mercado' },
-  { icon: MapPin, value: '18', label: 'Anos no mesmo local' },
-  { icon: Shield, value: '100%', label: 'Procedência garantida' },
+  { icon: Users, label: 'Clientes satisfeitos' },
+  { icon: Award, label: 'Experiência no mercado' },
+  { icon: Car, label: 'Variedade de veículos' },
+  { icon: Shield, label: 'Procedência garantida' },
 ];
 
 const values = [
   'Transparência em todas as negociações',
-  'Veículos revisados e com procedência garantida',
+  'Veículos revisados e com procedência',
   'Atendimento personalizado',
   'Facilidade no financiamento',
   'Aceitamos veículo na troca',
@@ -40,16 +40,12 @@ export default function QuemSomosPage() {
               <div className="relative">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-black flex items-center justify-center p-8">
                   <Image
-                    src="/maverick.png"
-                    alt="Maverick Veículos"
+                    src="/viajaguar.png"
+                    alt="Via Jaguar"
                     width={400}
                     height={200}
                     className="object-contain"
                   />
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-primary text-black p-6 rounded-2xl shadow-xl hidden md:block">
-                  <p className="text-sm">Desde</p>
-                  <p className="text-4xl font-bold">2008</p>
                 </div>
               </div>
             </AnimateOnScroll>
@@ -60,21 +56,21 @@ export default function QuemSomosPage() {
                   Nossa História
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                  18 anos construindo confiança!
+                  Tradição e confiança em Jaguariúna!
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> está no mercado
-                    desde 2008, há 18 anos no mesmo local construindo relacionamento de confiança
-                    com nossos clientes em Niterói/RJ e região.
+                    A <strong className="text-foreground">{SITE_CONFIG.name}</strong> nasceu
+                    com o propósito de oferecer os melhores veículos seminovos da região.
+                    Trabalhamos com dedicação e transparência em Jaguariúna/SP.
                   </p>
                   <p>
                     Trabalhamos com compra, venda, troca e financiamento de veículos,
                     sempre oferecendo atendimento personalizado e as melhores condições do mercado.
                   </p>
                   <p>
-                    Todos os nossos veículos são de qualidade e com procedência garantida.
-                    Nossa prioridade é a satisfação e segurança dos nossos clientes!
+                    Todos os nossos veículos passam por rigorosa inspeção antes de serem
+                    disponibilizados para venda. Qualidade e procedência garantidas!
                   </p>
                 </div>
               </div>
@@ -86,14 +82,13 @@ export default function QuemSomosPage() {
       <section className="py-16 bg-zinc-900 text-white">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map(({ icon: Icon, value, label }, index) => (
+            {stats.map(({ icon: Icon, label }, index) => (
               <AnimateOnScroll key={label} animation="fadeUp" delay={index * 100}>
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/20 mb-4">
-                    <Icon className="h-7 w-7 text-primary" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <p className="text-3xl md:text-4xl font-bold">{value}</p>
-                  <p className="text-zinc-400 text-sm mt-1">{label}</p>
+                  <p className="text-base font-semibold">{label}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -128,10 +123,10 @@ export default function QuemSomosPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="slideRight" delay={200}>
-              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-zinc-200">
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl bg-zinc-900">
                 <Image
-                  src="/quem-somos-2.jpg"
-                  alt="Maverick Veículos"
+                  src="/default.jpg"
+                  alt="Via Jaguar"
                   fill
                   className="object-cover"
                 />

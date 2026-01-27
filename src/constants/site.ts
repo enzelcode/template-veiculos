@@ -5,37 +5,37 @@
 
 export const SITE_CONFIG = {
   // Identidade
-  name: 'Maverick Veículos',
+  name: 'Via Jaguar',
   slogan: 'Seu próximo veículo está aqui!',
-  description: 'Maverick Veículos - Compra, venda, troca e financiamento de veículos em Niterói/RJ. Atendemos São Gonçalo e região!',
+  description: 'Via Jaguar - Compra, venda, troca e financiamento de veículos em Jaguariúna/SP.',
 
   // Contato
-  phone: '(21) 96564-3030',
-  whatsapp: '5521965643030',
+  phone: '(19) 99553-7005',
+  whatsapp: '5519995537005',
   email: '',
 
   // Endereço
   address: {
-    street: 'Rua Benjamin Constant',
-    number: '279',
-    neighborhood: 'Barreto',
-    city: 'Niterói',
-    state: 'RJ',
-    zipCode: '24110-002',
-    full: 'R. Benjamin Constant, 279 - Barreto, Niterói/RJ',
+    street: 'Rua Amazonas',
+    number: '950',
+    neighborhood: 'Jardim América',
+    city: 'Jaguariúna',
+    state: 'SP',
+    zipCode: '13912-028',
+    full: 'R. Amazonas, 950 - Jardim América, Jaguariúna/SP',
   },
 
   // Horário de funcionamento
   businessHours: {
-    weekdays: '08:00 às 17:00',
-    saturday: '08:00 às 12:00',
+    weekdays: '08:00 às 18:00',
+    saturday: '08:30 às 13:00',
     sunday: 'Fechado',
-    formatted: 'Seg-Sex: 08h-17h | Sáb: 08h-12h',
+    formatted: 'Ter-Sex: 08h-18h | Sáb: 08h30-13h',
   },
 
   // Redes sociais
   social: {
-    instagram: 'https://www.instagram.com/maverickveiculos/',
+    instagram: '',
     facebook: '',
     youtube: '',
     tiktok: '',

@@ -14,13 +14,13 @@ function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/maverick.png"
-              alt="Maverick Veículos"
+              src="/viajaguar.png"
+              alt="Via Jaguar"
               width={150}
               height={80}
               className="h-16 w-auto object-contain mb-4"
             />
-            <p className="text-sm text-zinc-400 mb-4">Compra, venda, troca e financiamento de veículos em Niterói/RJ. Atendemos São Gonçalo e região!</p>
+            <p className="text-sm text-zinc-400 mb-4">Compra, venda, troca e financiamento de veículos em Jaguariúna/SP. Seu próximo veículo está aqui!</p>
             <div className="flex gap-3">
               {SITE_CONFIG.whatsapp && (
                 <a

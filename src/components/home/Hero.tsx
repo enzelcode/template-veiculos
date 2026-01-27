@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 function HeroComponent({
-  title = `18 ANOS CONSTRUINDO CONFIANÇA!`,
-  subtitle = `Compra, venda, troca e financiamento de veículos em Niterói/RJ`,
+  title = `SEU PRÓXIMO VEÍCULO ESTÁ AQUI!`,
+  subtitle = `Compra, venda, troca e financiamento de veículos em Jaguariúna/SP`,
   backgroundImage,
 }: HeroProps) {
   return (
